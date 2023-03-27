@@ -1,0 +1,34 @@
+# Conda environment
+*-env
+
+# Xaringan-related files
+**/*_files
+
+# Lecture-related files
+lectures/**/*.html
+# lectures/**/*.pdf
+lectures/*/*/remark-css-0.0.1/default.css
+lectures/*/*/header-attrs-2.3/header-attrs.js
+
+# Various
+.snakemake
+.DS_Store
+
+# Output files from running tutorials
+jupyter/report.html
+jupyter/summary.txt
+jupyter/.ipynb_checkpoints
+**/data
+**/intermediate
+**/results
+**/work
+rmarkdown/.R*
+rmarkdown/*html
+rmarkdown/*Rproj
+snakemake/*txt
+snakemake/*png
+snakemake/*tsv
+.Rproj.user
+
+#compiled site
+site

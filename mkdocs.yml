@@ -1,0 +1,157 @@
+# Project information
+site_name: 'Bioinformatics Workshop on Tools for Reproducible Research'
+site_author: 'Jacques Dainat et al.'
+site_url: 'https://southgreenplatform.github.io/training_reproducible_research/'
+site_description: Workshop on Tools for Reproducible Research
+site_dir: public # When you build your site, all of the files are written to the directory assigned to the site_dir configuration option (defaults to "site")
+
+# Repository
+repo_name: 'training_reproducible_research'
+repo_url: 'https://github.com/SouthGreenPlatform/training_reproducible_research'
+edit_uri: edit/main/docs/ # Allow to replace edit/master/docs use by default
+
+# Configuration
+theme:
+  name: material
+  logo: pages/images/IRD.png # logo top left page
+  search_index_only: true
+  include_search_page: true
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+  # - content.tabs.link
+    - content.tooltips
+    - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.prune
+    # - navigation.sections # collapse subsections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate # remove table of content on the right side
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - attr_list
+  - tables
+  - toc:
+      permalink: '#'
+
+# Plugins
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - minify:
+      minify_html: true
+  - macros
+
+# Customization
+extra:
+#  homepage:  # Page displayed when clicking the logo
+  history_buttons: false
+  # --- set whole scope variables ---
+  contact: https://www.southgreen.fr/contact
+  institute: SouthGreen
+  repo: https://forge.ird.fr/mivegec/dainat/malbec-reproducible-research
+  color_table_header: "#333a99"
+
+# page tree
+nav:
+    - Home: index.md
+    - Practicalities:
+        - Schedule: pages/course-information/schedule.md
+        - Location: pages/course-information/location.md
+        - Lectures: pages/course-information/lectures.md
+        - Setup: pages/course-information/pre-course-setup.md
+    - Tutorials:
+        - Introduction: pages/introduction/introduction.md
+        - Data Management: pages/data-management/data-management.md
+        - Git:
+          - Introduction: pages/git/git-1-introduction.md
+          - Creating a git repository: pages/git/git-2-creating-repositories.md
+          - Committing changes: pages/git/git-3-committing-changes.md
+          - Ignoring files: pages/git/git-4-ignoring-files.md
+          - Branching and merging: pages/git/git-5-branches.md
+          - Tagging commits: pages/git/git-6-tags.md
+          - Working remotly: pages/git/git-7-working-remotely.md
+          - Conflict: pages/git/git-8-conflicts.md
+          - Extra material: pages/git/git-9-extra-material.md
+        - Conda:
+          - Introduction: pages/conda/conda-1-introduction.md
+          - The basics: pages/conda/conda-2-the-basics.md
+          - Projects: pages/conda/conda-3-projects.md
+          - Extra material: pages/conda/conda-4-extra-material.md
+        - Workflow Manager System:
+          - Snakemake:
+            - Introduction: pages/snakemake/snakemake-1-introduction.md
+            - The basics: pages/snakemake/snakemake-2-the-basics.md
+            - Visualising workflow: pages/snakemake/snakemake-3-visualising-workflows.md
+            - The MRSA Workflow: pages/snakemake/snakemake-4-the-mrsa-workflow.md
+            - Parameters: pages/snakemake/snakemake-5-parameters.md
+            - Logs: pages/snakemake/snakemake-6-logs.md
+            - Temporary files: pages/snakemake/snakemake-7-temporary-files.md
+            - Targets: pages/snakemake/snakemake-8-targets.md
+            - Shadow rules: pages/snakemake/snakemake-9-shadow-rules.md
+            - Generalizing workflows: pages/snakemake/snakemake-10-generalizing-workflows.md
+            - Extra materiel: pages/snakemake/snakemake-11-extra-material.md
+          - Nextflow:
+            - Introduction: pages/nextflow/nextflow-1-introduction_light.md
+        - Containers:
+          - Introduction: pages/containers/containers-1-introduction.md
+          - The basics: pages/containers/containers-2-the-basics.md
+          - Building a Docker image: pages/containers/containers-3-building-images.md
+          - Managing containers: pages/containers/containers-4-managing-containers.md
+          - Distributing your images: pages/containers/containers-5-sharing-images.md
+          - Packaging the case study: pages/containers/containers-6-packaging-the-case-study.md
+          - Singularity: pages/containers/containers-7-singularity.md
+          - Extra material: pages/containers/containers-8-extra-material.md
+        - R Markdown:
+          - Introduction: pages/rmarkdown/r-markdown-1-introduction.md
+          - The basics: pages/rmarkdown/r-markdown-2-the-basics.md
+          - Code chunks: pages/rmarkdown/r-markdown-3-code-chunks.md
+          - The YAML header: pages/rmarkdown/r-markdown-4-the-yaml-header.md
+          - Rendering: pages/rmarkdown/r-markdown-5-rendering.md
+          - The MRSA case study: pages/rmarkdown/r-markdown-6-the-mrsa-case-study.md
+          - Extra materiel: pages/rmarkdown/r-markdown-7-extra-material.md
+        - Jupyter:
+          - Introduction: pages/jupyter/jupyter-1-introduction.md
+          - The basics: pages/jupyter/jupyter-2-the-basics.md
+          - Magics: pages/jupyter/jupyter-3-magics.md
+          - Plotting: pages/jupyter/jupyter-4-plotting.md
+          - Widgets: pages/jupyter/jupyter-5-widgets.md
+          - Extensions: pages/jupyter/jupyter-6-extensions.md
+          - Converting notebooks: pages/jupyter/jupyter-7-converting-notebooks.md
+          - The MRSA case study: pages/jupyter/jupyter-8-the-mrsa-case-study.md
+          - Extra material: pages/jupyter/jupyter-9-extra-material.md
+        - Quarto:
+          - Introduction: pages/quarto/quarto-1-introduction.md
+        - 'Making a project reproducible': 'pages/project/project.md'
+        - 'Take down': 'pages/take_down/take_down.md'
