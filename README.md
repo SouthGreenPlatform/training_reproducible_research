@@ -3,7 +3,6 @@
 
 # Tools for Reproducible Research
 ---------------------------
-Tools for Reproducible Research course
 
 <img src="images/SouthGreen.png" /> 
 
@@ -11,7 +10,7 @@ Tools for Reproducible Research course
 
    * [Foreword](#foreword)
    * [Project layout](#project-layout)
-   * [For collaborators-teachers and developers](#for-collaborators-teachers-and-developers)     
+   * [For collaborators teachers and developers](#for-collaborators-teachers-and-developers)     
      * [Modify content](#modify-content)   
      * [MkDocs](#mkdocs)
         * [Welcome to MkDocs](#welcome-to-mkdocs)
@@ -31,6 +30,7 @@ This work is based on the NBIS / ELIXIR course *Tools for Reproducible Research*
 
 ## Project layout
 
+```
     README.md               # General readme 
     mkdocs.yml              # The configuration file for the site rendering.
     conda_env.yml           # Conda env to build and test the site locally
@@ -54,8 +54,9 @@ This work is based on the NBIS / ELIXIR course *Tools for Reproducible Research*
     tutorials/              # Folder dedicated to tutorials
         xxx                 # folder related to one tutorial
     Images                  # Images used in the README
+```  
 
-## For collaborators-teachers and developers
+## For collaborators teachers and developers
 
 This part is for collaborators-teachers and developers.
 
