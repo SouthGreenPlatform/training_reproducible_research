@@ -5,7 +5,7 @@
 ---------------------------
 Tools for Reproducible Research course
 
-<img src="images/SouthGreen.png" width="300" height="100" /> 
+<img src="images/SouthGreen.png" /> 
 
 ## Table of Contents
 
