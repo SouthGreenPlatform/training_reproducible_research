@@ -9,7 +9,7 @@
     [GitHub repository]( {{repo}})
 <img src="https://www.svgrepo.com/show/20800/event-date-and-time-symbol.svg"
     width="20" height="20"/>
-    6 - 9 Juin, 2023
+    14 - 16 Juin, 2023
 
 One of the key principles of proper scientific procedure is the act of
 repeating an experiment or analysis and being able to reach similar
