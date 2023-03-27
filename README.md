@@ -24,9 +24,9 @@
 
 ## Foreword
 
-The course itself lives [https://mivegec.pages.ird.fr/dainat/training-reproducible-research/pages/home/](https://mivegec.pages.ird.fr/dainat/training-reproducible-research/pages/home/),
+The course itself lives [https://southgreenplatform.github.io/training_reproducible_research/](https://southgreenplatform.github.io/training_reproducible_research/),
 where you can find all the relevant information.  
-This work is based on the NBIS / ELIXIR course *Tools for Reproducible Research* course.
+This work is based on the NBIS / ELIXIR *Tools for Reproducible Research* course.
 
 ## Project layout
 
