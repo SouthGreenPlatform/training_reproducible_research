@@ -21,7 +21,7 @@ Try to use the `render` command to knit your template R Markdown document and
 set the two parameters `data` and `color`. Hint: the `params` argument should
 be a list, *e.g.*:
 
-```
+```r
 rmarkdown::render("my_file.Rmd", params = list(data = "cars", color = "green"))
 ```
 

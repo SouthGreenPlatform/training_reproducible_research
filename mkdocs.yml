@@ -62,6 +62,7 @@ markdown_extensions:
   - pymdownx.tabbed
   - attr_list
   - tables
+  - md_in_html
   - toc:
       permalink: '#'
 
@@ -136,11 +137,12 @@ nav:
         - R Markdown:
           - Introduction: pages/rmarkdown/r-markdown-1-introduction.md
           - The basics: pages/rmarkdown/r-markdown-2-the-basics.md
-          - Code chunks: pages/rmarkdown/r-markdown-3-code-chunks.md
-          - The YAML header: pages/rmarkdown/r-markdown-4-the-yaml-header.md
-          - Rendering: pages/rmarkdown/r-markdown-5-rendering.md
-          - The MRSA case study: pages/rmarkdown/r-markdown-6-the-mrsa-case-study.md
-          - Extra materiel: pages/rmarkdown/r-markdown-7-extra-material.md
+          - Text: pages/rmarkdown/r-markdown-3-text.md
+          - Code chunks: pages/rmarkdown/r-markdown-4-code-chunks.md
+          - The YAML header: pages/rmarkdown/r-markdown-5-the-yaml-header.md
+          - Rendering: pages/rmarkdown/r-markdown-6-rendering.md
+          - The MRSA case study: pages/rmarkdown/r-markdown-7-the-mrsa-case-study.md
+          - Extra materiel: pages/rmarkdown/r-markdown-8-extra-material.md
         - Jupyter:
           - Introduction: pages/jupyter/jupyter-1-introduction.md
           - The basics: pages/jupyter/jupyter-2-the-basics.md
