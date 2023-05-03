@@ -32,7 +32,7 @@ for!
 This tutorial depends on files from the course GitHub repo. Take a look at the
 [setup](pre-course-setup) for instructions on how to set it up if you haven't
 done so already. Then open up a terminal and go to
-`workshop-reproducible-research/tutorials/jupyter` and activate your
+`training_reproducible_research/tutorials/jupyter` and activate your
 `jupyter-env` Conda environment.
 
 !!! Info "A note on nomenclature"
