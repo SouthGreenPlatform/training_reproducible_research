@@ -86,10 +86,17 @@ directory, create and activate your `rmarkdown-env` Conda environment and start 
 from the command line (type `rstudio &`).
 
 An example before we start? A screenshot of an R markdown file...
+<div align="center" markdown>
 
 ![hex-rmarkdown](../images/exampleRmarkdown_code.png)
 
+</div>
+
 and on the right its result in HTML.
 
+<div align="center" markdown>
+
 ![hex-rmarkdown](../images/exampleRmarkdown_result.png)
+
+</div>
 
