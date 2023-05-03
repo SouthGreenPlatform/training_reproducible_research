@@ -61,6 +61,7 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed
   - attr_list
+  - md_in_html
   - tables
   - toc:
       permalink: '#'
@@ -153,5 +154,9 @@ nav:
           - Extra material: pages/jupyter/jupyter-9-extra-material.md
         - Quarto:
           - Introduction: pages/quarto/quarto-1-introduction.md
+          - The basics: pages/quarto/quarto-2-the-basics.md
+          - Rendering: pages/quarto/quarto-3-the-rendering.md
+          - Extensions: pages/quarto/quarto-4-the-extensions.md
+          - Extra material: pages/quarto/quarto-5-extra-material.md
         - 'Making a project reproducible': 'pages/project/project.md'
         - 'Take down': 'pages/take_down/take_down.md'
