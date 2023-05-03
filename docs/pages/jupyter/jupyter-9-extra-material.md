@@ -285,3 +285,16 @@ JupyterLab is a cutting-edge web-based development environment that offers an in
 ![image](../images/jupyter_labpreview.webp)
 
 Want to try? You can go to [https://jupyter.org/try](https://jupyter.org/try) or [https://jupyterhub.cluster.france-bioinformatique.fr/](https://jupyterhub.cluster.france-bioinformatique.fr/) (if you have an account on the IFB cluster).
+
+## Jupyter book
+
+![Jupyter Book](../images/jupyter_jupyter_book.png){ align=left width=300 }
+
+With Jypter book, build an online book using a collection of Jupyter Notebooks and Markdown files with
+
+- Interactivity
+- Citations
+- Build and host it online with GitHub/GitHub Pages...
+- or locally on your own laptop
+
+An example ? You can find [here](https://ifb-elixirfr.github.io/LinuxEBAII/00_home.html) a Linux introduction create with Jupyter Book. 
