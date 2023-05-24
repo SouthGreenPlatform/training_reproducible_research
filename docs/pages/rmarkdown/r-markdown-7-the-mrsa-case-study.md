@@ -1,7 +1,7 @@
 As you might remember from the [intro](introduction), we are attempting to
 understand how lytic bacteriophages can be used as a future therapy for the
 multiresistant bacteria MRSA (methicillin-resistant _Staphylococcus aureus_).
-In this exercise we will use R Markdown to make a report in form of
+In this exercise, we will use R Markdown to make a report in form of
 a Supplementary Material HTML based on the outputs from the [Snakemake
 tutorial](snakemake-10-generalizing-workflows). Among the benefits of having
 the supplementary material (or even the full manuscript) in R Markdown format
@@ -66,10 +66,11 @@ date: "`r format(Sys.time(), '%d %B, %Y')`"
     parameters rather than hard-coding them later in the R code.
 
 Next, take a look at the `dependencies`, `read_params`, and `read_data` chunks.
-They 1) load the required packages, 2) read the parameters and store them in
-R objects to be used later in the code, and 3) read the data in the counts
-file, the multiqc file, as well as fetch meta data from GEO. These chunks are
-provided as is, and you do not need to edit them.
+They 
+
+1. load the required packages, 
+2. read the parameters and store them in R objects to be used later in the code, and 
+3. read the data in the counts file, the multiqc file, as well as fetch meta data from GEO. These chunks are provided as is, and you do not need to edit them.
 
 Below these chunks there is some markdown text that contains the Supplementary
 Methods section. Note the use of section headers using `#` and `##`. Then there
@@ -86,8 +87,8 @@ effortless way to increase reproducibility.
 
 ## Rendering options and paths
 
-* Now that you have had a look at the R Markdown document, it is time to Knit!
-  We will do this from the R terminal (rather than pressing *Knit*).
+Now that you have had a look at the R Markdown document, it is time to Knit!
+We will do this from the R terminal (rather than pressing *Knit*).
 
 ```r
 rmarkdown::render("code/supplementary_material.Rmd", output_dir = "results")
