@@ -273,3 +273,28 @@ You can also export the notebook to an HTML-file with `jupyter nbconvert
 --execute --to SLIDES <your-notebook.ipynb>`. The resulting file, with the
 slideshow functionality included, can be opened in any browser. However, in
 this format you cannot run/edit cells.
+
+An example ?
+
+<iframe id="iframehtml" src="../../../lectures/jupyter/jupyter.slides.html" frameborder="0" width="640" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+## JupyterLab
+
+JupyterLab is a cutting-edge web-based development environment that offers an interactive and dynamic interface for working with notebooks, code, and data. Its adaptable design empowers users to customize and organize their workflows, catering to various applications such as data science, scientific computing, and machine learning. Moreover, its modular architecture is conducive to adding extensions that augment and diversify the functionality of the platform. 
+
+![image](../images/jupyter_labpreview.webp)
+
+Want to try? You can go to [https://jupyter.org/try](https://jupyter.org/try) or [https://jupyterhub.cluster.france-bioinformatique.fr/](https://jupyterhub.cluster.france-bioinformatique.fr/) (if you have an account on the IFB cluster).
+
+## Jupyter book
+
+![Jupyter Book](../images/jupyter_jupyter_book.png){ align=left width=300 }
+
+With Jypter book, build an online book using a collection of Jupyter Notebooks and Markdown files with
+
+- Interactivity
+- Citations
+- Build and host it online with GitHub/GitHub Pages...
+- or locally on your own laptop
+
+An example ? You can find [here](https://ifb-elixirfr.github.io/LinuxEBAII/00_home.html) a Linux introduction create with Jupyter Book. 
