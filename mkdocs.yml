@@ -13,7 +13,7 @@ edit_uri: edit/main/docs/ # Allow to replace edit/master/docs use by default
 # Configuration
 theme:
   name: material
-  logo: pages/images/IRD.png # logo top left page
+  logo: pages/images/southgreen.png # logo top left page
   search_index_only: true
   include_search_page: true
   features:
@@ -57,15 +57,17 @@ theme:
 # Extensions
 markdown_extensions:
   - admonition
+  - attr_list
+  - md_in_html
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.tabbed
-  - attr_list
+  - pymdownx.snippets:
+      base_path: docs  
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - tables
-  - md_in_html
   - toc:
       permalink: '#'
 
@@ -84,17 +86,11 @@ extra:
   # --- set whole scope variables ---
   contact: https://www.southgreen.fr/contact
   institute: SouthGreen
-  repo: https://forge.ird.fr/mivegec/dainat/malbec-reproducible-research
   color_table_header: "#333a99"
 
 # page tree
 nav:
     - Home: index.md
-    - Practicalities:
-        - Schedule: pages/course-information/schedule.md
-        - Location: pages/course-information/location.md
-        - Lectures: pages/course-information/lectures.md
-        - Setup: pages/course-information/pre-course-setup.md
     - Tutorials:
         - Introduction: pages/introduction/introduction.md
         - Data Management: pages/data-management/data-management.md

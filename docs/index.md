@@ -81,26 +81,22 @@ are crucial, the student needs to confer with the home department before
 submitting a course application in order to establish whether the course is
 valid for formal credits or not.
 
-By accepting to participate in the course, you agree to follow the [Code of Conduct](course-information/code-of-conduct.md).
+By accepting to participate in the course, you agree to follow the [Code of Conduct](pages/course-information/code-of-conduct.md).
 
 # Schedule
 
-You can find the course schedule at [this page](course-information/schedule.md).
+You can find the course schedule at [this page](pages/course-information/schedule.md).
 
 # Location
 
-This course round is given on site. More information can be found at [this page](course-information/location.md).
+This course round is given on site. It will take place in the Badiane room at Agropolis.
 
 # Course material
 
-The [pre-course setup](course-information/pre-course-setup.md)
+The [pre-course setup](pages/course-information/pre-course-setup.md)
 page lists all the information you need before the course starts. The most
 important part is the installation and setup of all the tools used in the
 course, so make sure you've gone through it all for the course start.
-
-All of the lectures used in this course is available under the
-[lectures/]({{config.extra.repo}}/tree/main/lectures)
-directory on GitHub.
 
 # Teachers
 
