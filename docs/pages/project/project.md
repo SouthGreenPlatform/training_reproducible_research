@@ -1,6 +1,99 @@
 # Putting everything together
+## Review of the sessions
 
-<iframe id="iframepdf" src="../../../lectures/putting-it-together/putting-it-together.pdf" frameborder="0" width="640" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<figure markdown>
+  ![](../images/whats_in_it_for_me.png)
+  <figcaption>By working reproducibly you will also make your life a lot easier!</figcaption>
+</figure>
+
+### What have we learned?
+
+- How to use the version control system Git to track changes to code
+- How to use the package and environment manager Conda
+- How to use the workflow managers Snakemake and Nextflow
+- How to use R Markdown and Jupyter to generate automated reports and to document your analyses
+- How to use Docker and Singularity to distribute containerized computational
+environments
+
+### Divide your work into distinct projects
+
+- Keep all files needed to go from raw data to final results in a dedicated directory
+- Use relevant subdirectories
+- Many software support the “project way of working”, e.g. Rstudio and the text editors
+Sublime Text and Atom
+- Use Git to create structured and version controlled project repositories
+
+Everything can be a project ! For example, you can find a project directory tempalte proposed by NBIS ([repo](https://github.com/NBISweden/project_template)):
+
+```
+project
+|- doc/                documentation for the study
+|
+|- data/               raw and primary data, essentially all input files, never edit!
+|  |- raw_external/
+|  |- raw_internal/
+|  |- meta/
+|
+|- code/               all code needed to go from input files to final results
+|- notebooks/
+|
+|- intermediate/       output files from different analysis steps, can be deleted
+|- scratch/            temporary files that can be safely deleted or lost
+|- logs/               logs from the different analysis steps
+|
+|- results/            output from workflows and analyses
+|  |- figures/
+|  |- tables/
+|  |- reports/
+|
+|- .gitignore          sets which parts of the repository that should be git tracked
+|- Snakefile           project workflow, carries out analysis contained in code/
+|- config.yml          configuration of the project workflow
+|- environment.yml     software dependencies list, used to create a project environment
+|- Dockerfile          recipe to create a project container
+```
+### What to do with the different data ?
+
+You must keep your input data read-only - consider it static. Don't create different versions of the input data - write a script, R Markdown document, Jupyter notebook or a Snakemake / Nextflow workflow if you need to preprocess your input data so that the steps can be recreated. Of course, **BACKUP** your data! Keep redundant copies in different physical locations (3-2-1 backup rule).
+
+<figure markdown>
+  ![](../images/3-2-1-Backup-Rule.png)
+  <figcaption><a href='https://www.msp360.com/resources/blog/following-3-2-1-backup-strategy/'>source</a></figcaption>
+</figure>
+
+And of course in an open science & FAIR approach, upload your raw data as soon as possible to a public data repository
+
+### What is reasonable for your project?
+
+The **minimal** level is to write code in a reproductible way. You can connect your results with the code (R markdown, Juyter notebooks, ...) and why not convert your code into a Snakemake / Nexflow workflow.
+
+The **good** level is to add the code versionning. You can use Git for versionning and collaboration and publish your code along with your results on GitHub, GitLab,...
+
+A **better** level would be to add the organisation of software dependencies. You can use conda  to install software in environments that can be easily exported and installed on a different system.
+
+The **best** level would be to add an export of everything. You can completly recreate he compute system with docker or singularity container.
+
+### Alternatives
+
+There are of course alternatives to all the tools presented in this course such as: 
+
+| Presented      | Alternative                          |
+| -------------- | ------------------------------------ |
+| **Git**       | **Mecurial** (Distributed model just like Git, close to sourceforge.), **Subversion** (Centralized model unlike git/mercurial; no local repository on your computer and somewhat easier to use) |
+| **Conda**       | **Pip** (Package manager for Python, has a large repository at pypi.), **Apt/yum/brew** (Native package managers for different OS. Integrated in OS and might deal with e.g. update notifications better), **virtualenv** (Environment manager used to set up semi-isolated python environments)  |
+| **Conda**       | **Make** (Used in software development and has been around since the 70s. Flexible but notoriously obscure syntax.), **Galaxy** (attempts to make computational biology accessible to researchers without programming experience by using a GUI.)  |
+| **Jupyter**, **R markdown**, **Quarto**       | **Zeppelin** (Developed by Apache. Closely integrated with Spark for distributed computing and Big Data applications.), **Beaker** (Newcomer based on Ipython, just as Jupyter. Has a focus on integrating multiple languages in the same notebook.)  |
+| **Docker**, **Sigularity** | **Shifter** (Similar ambition as Singularity, but less focus on mobility and more on resource management), **VirtualBox/VMWare** (Virtualization rather than containerization. Less lightweight, but no reliance on host kernel.)  |
+
+## In conclusion, what's in it for me ? 
+
+<div align="center" markdown>
+![](../images/calvin_hobbes_past_corresponding.png)
+</div>
+
+## And now ?
+
+### Create a project from scratch !
 
 It is time to try to set up a project from scratch and use the different
 tools that we have covered during the course together! This exercise is very
@@ -16,8 +109,7 @@ should aim to use what you've learned to do the following:
 
 4. Create a R Markdown or Jupyter notebook to run your code
 
-5. Alternatively, create a `Snakefile` to run your code as a workflow and use a `config.yml` file
-   to add settings to the workflow
+5. Alternatively, create a `Snakefile` to run your code as a workflow and use a `config.yml` file to add settings to the workflow
 
 6. Use git to continuously commit changes to the repository
 
@@ -35,7 +127,7 @@ but to really think about each step and how it all fits together in practice.
     analysis for this exercise short so that you have time to try out the different
     tools together while you have the opportunity to ask for help.
 
-## Your own project
+### Your own project
 
 This is a great opportunity for you to try to implement these methods on one
 of your current research projects. It is of course up to you which tools to
@@ -49,7 +141,7 @@ for at least git and Conda.
     original size. You can then test your implementation on the subset and only
     run it on the whole dataset once everything works to your satisfaction.
 
-## Alternative: student experience project
+### Alternative: student experience project
 
 If you don't want to use a project you're currently working on we have
 a suggestion for a small-scale project for you. The idea is to analyze
@@ -58,13 +150,15 @@ use responses from students to the registration form for the course. Below
 you'll find links to files in `*.csv` format with answers from 3 course instances:
 
 2018-11<br>
-<font size="2">https://docs.google.com/spreadsheets/d/1yLcJL-rIAO51wWCPrAdSqZvCJswTqTSt4cFFe_eTjlQ/export?format=csv</font><br>
+<font size="2"><a href='https://docs.google.com/spreadsheets/d/1yLcJL-rIAO51wWCPrAdSqZvCJswTqTSt4cFFe_eTjlQ/export?format=csv'>https://docs.google.com/spreadsheets/d/1yLcJL-rIAO51wWCPrAdSqZvCJswTqTSt4cFFe_eTjlQ/export?format=csv</a></font><br>
 2019-05<br>
 <font size="2">
-https://docs.google.com/spreadsheets/d/1mBp857raqQk32xGnQHd6Ys8oZALgf6KaFehfdwqM53s/export?format=csv</font><br>
+<a href='https://docs.google.com/spreadsheets/d/1mBp857raqQk32xGnQHd6Ys8oZALgf6KaFehfdwqM53s/export?format=csv'>https://docs.google.com/spreadsheets/d/1mBp857raqQk32xGnQHd6Ys8oZALgf6KaFehfdwqM53s/export?format=csv</a>
+</font><br>
 2019-11<br>
 <font size="2">
-https://docs.google.com/spreadsheets/d/1aLGpS9WKvmYRnsdmvvgX_4j9hyjzJdJCkkQdqWq-uvw/export?format=csv</font>
+<a href='https://docs.google.com/spreadsheets/d/1aLGpS9WKvmYRnsdmvvgX_4j9hyjzJdJCkkQdqWq-uvw/export?format=csv'>https://docs.google.com/spreadsheets/d/1aLGpS9WKvmYRnsdmvvgX_4j9hyjzJdJCkkQdqWq-uvw/export?format=csv</a>
+</font>
 
 The goal here is to create a Snakemake workflow, which contains the following:
 
@@ -235,3 +329,19 @@ the cleaned files as input.
     ```
     python plot.py file1.csv file2.csv file3.csv --outdir results/
     ```
+
+## To end on a high note !
+
+To conclude this session, we offer you a demo to go further into reproducibility. We will : 
+1. Create a repo on Github
+2. Create a README and set a license
+3. Add a conda file and our Jupyter note book file
+4. Update the README to explain how to edit it and use quarto to generate the page in HTML
+5. Publish this page on GitHub and put it online
+6. Make a release with Zenodo to have a DOI of your code
+7. Set up a contributors file
+8. See how to archive the repository on Software heritage
+
+You can find a support with different screenshots if you want try it yourself ([here](https://moodle.france-bioinformatique.fr/pluginfile.php/346/course/section/47/09_expose_your_work_github.pdf))
+
+Et voilà !

@@ -13,7 +13,7 @@ edit_uri: edit/main/docs/ # Allow to replace edit/master/docs use by default
 # Configuration
 theme:
   name: material
-  logo: pages/images/IRD.png # logo top left page
+  logo: pages/images/southgreen.png # logo top left page
   search_index_only: true
   include_search_page: true
   features:
@@ -57,11 +57,16 @@ theme:
 # Extensions
 markdown_extensions:
   - admonition
+  - attr_list
+  - md_in_html
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.tabbed
-  - attr_list
-  - md_in_html
+  - pymdownx.snippets:
+      base_path: docs  
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - tables
   - toc:
       permalink: '#'
@@ -81,17 +86,11 @@ extra:
   # --- set whole scope variables ---
   contact: https://www.southgreen.fr/contact
   institute: SouthGreen
-  repo: https://forge.ird.fr/mivegec/dainat/malbec-reproducible-research
   color_table_header: "#333a99"
 
 # page tree
 nav:
     - Home: index.md
-    - Practicalities:
-        - Schedule: pages/course-information/schedule.md
-        - Location: pages/course-information/location.md
-        - Lectures: pages/course-information/lectures.md
-        - Setup: pages/course-information/pre-course-setup.md
     - Tutorials:
         - Introduction: pages/introduction/introduction.md
         - Data Management: pages/data-management/data-management.md
@@ -137,11 +136,12 @@ nav:
         - R Markdown:
           - Introduction: pages/rmarkdown/r-markdown-1-introduction.md
           - The basics: pages/rmarkdown/r-markdown-2-the-basics.md
-          - Code chunks: pages/rmarkdown/r-markdown-3-code-chunks.md
-          - The YAML header: pages/rmarkdown/r-markdown-4-the-yaml-header.md
-          - Rendering: pages/rmarkdown/r-markdown-5-rendering.md
-          - The MRSA case study: pages/rmarkdown/r-markdown-6-the-mrsa-case-study.md
-          - Extra materiel: pages/rmarkdown/r-markdown-7-extra-material.md
+          - Text: pages/rmarkdown/r-markdown-3-text.md
+          - Code chunks: pages/rmarkdown/r-markdown-4-code-chunks.md
+          - The YAML header: pages/rmarkdown/r-markdown-5-the-yaml-header.md
+          - Rendering: pages/rmarkdown/r-markdown-6-rendering.md
+          - The MRSA case study: pages/rmarkdown/r-markdown-7-the-mrsa-case-study.md
+          - Extra materiel: pages/rmarkdown/r-markdown-8-extra-material.md
         - Jupyter:
           - Introduction: pages/jupyter/jupyter-1-introduction.md
           - The basics: pages/jupyter/jupyter-2-the-basics.md

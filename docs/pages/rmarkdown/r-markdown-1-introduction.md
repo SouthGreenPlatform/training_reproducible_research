@@ -1,10 +1,18 @@
-<iframe id="iframepdf" src="../../../lectures/rmarkdown/rmarkdown.pdf" frameborder="0" width="640" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+!!! info "The programme of this section"
+    In this section we will learn:
+    
+    - markdown
+    - how to create an R-markdonw file
+    - How to use the different elements that make up a markdown file 
+    - How to render the results
+
+## A markup language
 
 A *markup language* is a system for annotating text documents in order to
 *e.g.* define formatting. HTML, if you are familiar with that, is an example of
 a markup language. HTML uses tags, such as:
 
-```html
+```html title="Example in HTML"
 <h1>Heading</h1>
 <h2>Sub-heading</h2>
 <a href="www.webpage.com">Link</a>
@@ -15,11 +23,24 @@ a markup language. HTML uses tags, such as:
 </ul>
 ```
 
+and this is the result :
+
+<h1>Heading</h1>
+<h2>Sub-heading</h2>
+<a href="http://example.com">Link</a>
+<ul>
+  <li>List-item1</li>
+  <li>List-item2</li>
+  <li>List-item3</li>
+</ul>
+
+## Markdown
+
 *Markdown* is a lightweight markup language which uses plain-text syntax in
 order to be as unobtrusive as possible, so that a human can easily read it.
-Some examples:
+The code below gives the same result as the HTML code shown above : 
 
-```no-highlight
+```markdown title="Example in markdown"
 # Heading
 
 ## Sub-heading
@@ -38,10 +59,14 @@ Bullet list:
 ```
 
 A markdown document can be converted to other formats, such as HTML or PDF, for
-viewing in a browser or a PDF reader; the page you are reading right now is
+viewing in a browser or a PDF reader. For example, the page you are reading right now is
 written in markdown. Markdown is somewhat ill-defined, and as a consequence of
 that there exist many implementations and extensions, although they share most
 of the syntax. *R Markdown* is one such implementation/extension.
+
+## R markdown
+
+![hex-rmarkdown](../images/hex-rmarkdown.png){ align=left width=200 }
 
 R Markdown documents can be used both to save and execute code and to generate
 reports in various formats. This is done by mixing markdown (as in the example
@@ -56,6 +81,22 @@ setting (or as we utilise Jupyter notebooks in the tutorial after this one).
 
 This tutorial depends on files from the course GitHub repo. Take a look at the
 [setup](pre-course-setup) for instructions on how to set it up if you haven't
-done so already. Place yourself in the `workshop-reproducible-research/tutorials/rmarkdown/`
-directory, activate your `rmarkdown-env` Conda environment and start RStudio
+done so already. Place yourself in the `training_reproducible_research/tutorials/rmarkdown/`
+directory, create and activate your `rmarkdown-env` Conda environment and start RStudio
 from the command line (type `rstudio &`).
+
+An example before we start? A screenshot of an R markdown file...
+<div align="center" markdown>
+
+![hex-rmarkdown](../images/exampleRmarkdown_code.png)
+
+</div>
+
+and on the right its result in HTML.
+
+<div align="center" markdown>
+
+![hex-rmarkdown](../images/exampleRmarkdown_result.png)
+
+</div>
+

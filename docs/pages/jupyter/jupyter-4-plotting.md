@@ -1,3 +1,5 @@
+## Matplotlib
+
 An essential feature of Jupyter Notebooks is of course the ability to visualize
 data and results via plots. A full guide to plotting in Python is beyond the
 scope of this course, but we'll offer a few glimpses into the plotting landscape
@@ -32,6 +34,8 @@ matplotlib_inline.backend_inline.set_matplotlib_formats('pdf', 'svg')
 Now try running the code for the sine wave plot again.
 
 ## Other packages for plotting
+
+### Seaborn
 
 As we mentioned Matplotlib comes with **a lot** of functionality which is great
 because it allows you to create all sorts of plots and modify them exactly to
@@ -111,9 +115,42 @@ saved to file.
 The Seaborn [website](http://seaborn.pydata.org/) contains great tutorials and
 examples of other ways to plot data!
 
+### Plotly
+
+Another package? Do you know plotly? The plotly Python library is a versatile and user-friendly plotting tool that offers a rich selection of over 40 chart types, including statistical, financial, geographic, scientific, and 3-dimensional options, enabling users to create interactive and engaging visualizations. It is also an open-source library, making it accessible to anyone who wants to use it.
+
+What's the most important thing about it compared to the others? Its dynamic side! It is possible to zoom in, to hover over a point to obtain information, etc.  
+
+**A classic scatter plot**
+
+```python
+from plotly.offline import init_notebook_mode, iplot
+import plotly.express as px
+
+init_notebook_mode(connected=True)   # initiate notebook for offline plot
+
+fig = px.scatter(x=[0, 1, 2, 3, 4], y=[0, 1, 4, 9, 16])
+fig.show()
+```
+
+**A bubble plot**
+
+```python
+df = px.data.gapminder()
+
+fig = px.scatter(df.query("year==2007"), x="gdpPercap", y="lifeExp",
+	         size="pop", color="continent",
+                 hover_name="country", log_x=True, size_max=60)
+fig.show()
+```
+
+The Plotly [website](https://plotly.com/python/) contains great tutorials and
+examples of other ways to plot data! And it's also available for R, JS, Julia and MATLAB®.
+
 !!! Success "Quick recap"
     In this section we've learned:
 
     - How to generate simple plots with `matplotlib`
     - How to import and use the `seaborn` package for plotting
+    - How to import and use the `plotly` package for plotting
     - How to save plots from notebooks to a file
