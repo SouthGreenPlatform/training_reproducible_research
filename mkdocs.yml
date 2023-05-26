@@ -57,14 +57,17 @@ theme:
 # Extensions
 markdown_extensions:
   - admonition
+  - attr_list
+  - md_in_html
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.tabbed
   - pymdownx.snippets:
-      base_path: docs
-  - attr_list
+      base_path: docs  
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - tables
-  - md_in_html
   - toc:
       permalink: '#'
 
@@ -155,6 +158,10 @@ nav:
           - Extra material: pages/jupyter/jupyter-9-extra-material.md
         - Quarto:
           - Introduction: pages/quarto/quarto-1-introduction.md
+          - The basics: pages/quarto/quarto-2-the-basics.md
+          - Rendering: pages/quarto/quarto-3-the-rendering.md
+          - Extensions: pages/quarto/quarto-4-the-extensions.md
+          - Extra material: pages/quarto/quarto-5-extra-material.md
         - 'Making a project reproducible': 'pages/project/project.md'
         - 'Take down': 'pages/take_down/take_down.md'
     - Cheat sheet:

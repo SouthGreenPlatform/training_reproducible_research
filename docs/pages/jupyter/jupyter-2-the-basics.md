@@ -87,67 +87,25 @@ are only applicable when in command mode (blue frames). Most of them are also
 available from the menus. These shortcuts are also available from the **Help**
 menu in your notebook (there's even an option there to edit shortcuts).
 
-<table class="table table-hover table-condensed" border=1; style="width:400px; margin-left:auto; margin-right:auto;">
-    <thead style="background-color:{{config.extra.color_table_header}}">
-        <tr>
-            <td style="padding:5px; text-align:center;"> <font size="3"><b> Shortcut </b></td>
-            <td style="padding:5px"> <font size="3"><b> Effect </b></td>
-        </tr>
-    </thead>
-    <tr>
-        <td style="padding:5px; text-align:center;"> <font size="3"> `enter` </td>
-        <td style="padding:5px"> <font size="3"> enter Edit mode </td>
-    </tr>
-    <tr>
-        <td style="padding:5px; text-align:center;"> <font size="3"> `escape` </td>
-        <td style="padding:5px"> <font size="3"> Enter Command mode </td>
-    </tr>
-    <tr>
-        <td style="padding:5px; text-align:center;"> <font size="3"> `ctrl` - `enter`</td>
-        <td style="padding:5px"> <font size="3"> Run the cell </td>
-    </tr>
-    <tr>
-        <td style="padding:5px; text-align:center;"> <font size="3"> `shift` - `enter`</td>
-        <td style="padding:5px"> <font size="3"> Run the cell and select the cell below </td>
-    </tr>
-    <tr>
-        <td style="padding:5px; text-align:center;"> <font size="3"> `alt` - `enter`</td>
-        <td style="padding:5px"> <font size="3"> Run the cell and insert a new cell below </td>
-    </tr>
-    <tr>
-        <td style="padding:5px; text-align:center;"> <font size="3"> `s`</td>
-        <td style="padding:5px"> <font size="3"> Save the notebook </td>
-    </tr>
-    <tr>
-        <td style="padding:5px; text-align:center;"> <font size="3"> `tab` </td>
-        <td style="padding:5px"> <font size="3"> For code completion or indentation </td>
-    </tr>
-    <tr>
-        <td style="padding:5px; text-align:center;"> <font size="3"> `m`, `y`</td>
-        <td style="padding:5px"> <font size="3"> Toggle between Markdown and Code cells </td>
-    </tr>
-    <tr>
-        <td style="padding:5px; text-align:center;"> <font size="3"> `d`- `d` </td>
-        <td style="padding:5px"> <font size="3"> Delete a cell </td>
-    </tr>
-    <tr>
-        <td style="padding:5px; text-align:center;"> <font size="3"> `a` </td>
-        <td style="padding:5px"> <font size="3"> Insert cells above current cell </td>
-    </tr>
-    <tr>
-        <td style="padding:5px; text-align:center;"> <font size="3"> `b` </td>
-        <td style="padding:5px"> <font size="3"> Insert cells below current cell </td>
-    </tr>
-    <tr>
-        <td style="padding:5px; text-align:center;"> <font size="3"> `x` </td>
-        <td style="padding:5px"> <font size="3"> Cut currently selected cells </td>
-    </tr>
-    <tr>
-        <td style="padding:5px; text-align:center;"> <font size="3"> `o` </td>
-        <td style="padding:5px"> <font size="3"> Toggle output of current cell </td>
-    </tr>
-</table>
+<div align="center" markdown>
 
+| Shortcut          | Effect                                    |
+| ----------------- | ----------------------------------------- |
+| `enter`           | Enter Edit mode                           |
+| `escape`          | Enter Command mode                        |
+| `ctrl` - `enter`  | Run the cell                              |
+| `shift` - `enter` | Run the cell and select the cell below    |
+| `alt` - `enter`   | Run the cell and insert a new cell below  |
+| `s`               | Save the notebook                         |
+| `tab`             | For code completion or indentation        |
+| `m`, `y`          | Toggle between Markdown and Code cells    |
+| `d`- `d`          | Delete a cell                             |
+| `a`               | Insert cells above current cell           |
+| `b`               | Insert cells below current cell           |
+| `x`               | Cut currently selected cells              |
+| `o`               | Toggle output of current cell             |
+
+</div>
 
 ## Writing markdown
 
