@@ -1,4 +1,4 @@
-<iframe id="iframepdf" src="../../../lectures/git/git.pdf" frameborder="0" width="640" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> 
+<iframe id="iframepdf" src="../../../lectures/git/git_2023.pdf" frameborder="0" width="640" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> 
 
 Git is a widely used system (both in academia and industry) for version
 controlling files and collaborating on code. It is used to track changes in
@@ -45,5 +45,5 @@ be using most of the time in your day-to-day work with Git, but Git has many
 more advanced features that might be of use to you.
 
 This tutorial depends on files from the course GitHub repo. Take a look at the
-[setup](pre-course-setup) for instructions on how to set it up if you haven't
+[setup](../course-information/pre-course-setup.md) for instructions on how to set it up if you haven't
 done so already.

@@ -32,29 +32,31 @@ git commit -m "Add initial files"
 The `-m` option adds a commit message. This should be a short description of
 what the commit contains.
 
-> **Good commit messages** <br>
-> Writing informative and succinct commit messages can be tricky when you're
-> just starting out. Here are some general guidelines that can help you write
-> good commit messages from the start:
->
-> * Separate subject from body with a blank line
-> * Limit the subject line to 50 characters
-> * Capitalize the subject line
-> * Do not end the subject line with a period
-> * Use the [imperative mood](https://en.wikipedia.org/wiki/Imperative_mood)
->   in the subject line
-> * Wrap the body at 72 characters
-> * Use the body to explain *what* and *why* vs. *how*
->
-> In the command above we just added a short subject line ("Add initial
-> files"). It is capitalized, less than 50 characters, does not end with
-> a period, and uses imperative mood (Add!). It is possible to add
-> a descriptive body text as well, as hinted by the points above. This is
-> easiest done in a text editor. If you run `git commit` without the `-m`
-> flag, Git will open the default terminal text editor (which can be
-> configured with the `core.editor` variable) where you can write a longer
-> commit message and body. If you want to read more about the motivation for
-> these points, please see [this website](https://chris.beams.io/posts/git-commit/).
+!!! tip "Good commit messages"
+    It exists git commands to see what changed between commits and how it changed. 
+    A commit message should tell you **why** it changed and **provide context**.
+    Writing informative and succinct commit messages can be tricky when you're
+    just starting out. Here are some general guidelines that can help you write
+    good commit messages from the start:
+
+    * Separate subject from body with a blank line
+    * Limit the subject line to 50 characters
+    * Capitalize the subject line
+    * Do not end the subject line with a period
+    * Use the [imperative mood](https://en.wikipedia.org/wiki/Imperative_mood)
+      in the subject line
+    * Wrap the body at 72 characters
+    * Use the body to explain *what* and *why* vs. *how*
+
+    In the command above we just added a short subject line ("Add initial
+    files"). It is capitalized, less than 50 characters, does not end with
+    a period, and uses imperative mood (Add!). It is possible to add
+    a descriptive body text as well, as hinted by the points above. This is
+    easiest done in a text editor. If you run `git commit` without the `-m`
+    flag, Git will open the default terminal text editor (which can be
+    configured with the `core.editor` variable) where you can write a longer
+    commit message and body. If you want to read more about the motivation for
+    these points, please see [this website](https://chris.beams.io/posts/git-commit/).
 
 * Run `git status` again. It should tell you *"nothing to commit, working
   directory clean"*.
@@ -64,7 +66,7 @@ added to the Git staging area, which we subsequently committed to our Git
 repository. A schematic overview of this process can be seen in the following
 figure:
 
-![](images/git_overview_local.png){ width=600px }
+![](../images/git_stage_commit.svg){ width=600px }
 
 Let's repeat this process by editing a file!
 
@@ -157,7 +159,6 @@ git add Dockerfile
 git status
 git commit -m "Remove Dockerfile"
 git status
-git log
 ```
 
 Here we used `rm Dockerfile` to delete the file and `git add Dockerfile` to
@@ -168,7 +169,10 @@ operations in one step.
 
 ```bash
 git log
+git log --oneline
 ```
+
+What difference do you see between the two commands?
 
 !!! Tip
     Since Git keeps track of changes in text, *e.g.* code and text-based
@@ -185,5 +189,7 @@ git log
     
     * `git add` adds a file to the staging area
     * `git commit` commits the changes we have staged
+    * `git reset HEAD <file>` remove a file from the staging area
     * `git rm` is shorthand for `rm <file>; git add <file>`
     * `git log` shows us the commit history
+    * `git log --oneline` overview of the log, one line by commit

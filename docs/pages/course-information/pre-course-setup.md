@@ -1,24 +1,17 @@
+# Unix environment
+
 ## Setup for Mac / Linux users
 
-First, `cd` into a directory on your computer (or create one) where it makes
-sense to download the course directory.
+You are lucky, using a UNIX based system as always been ideal for bioinformatics.
+Open a bash shell terminal and follow the installation instructions.
+
+First, create and move into a directory on your computer where it makes
+sense to work during the course e.g. `~/training-reproducible-research-area`.
 
 ```bash
-cd /path/to/your/directory
-git clone https://github.com/NBISweden/workshop-reproducible-research.git
-cd workshop-reproducible-research
+mkdir ~/training-reproducible-research-area
+cd ~/training-reproducible-research-area
 ```
-
-!!! tip
-    If you want to revisit the material from an older instance of this course,
-    you can do that using `git checkout tags/<tag-name>`, e.g.
-    `git checkout tags/course_1905`. To list all available tags, use `git tag`.
-    Run this command after you have `cd` into `workshop-reproducible-research`
-    as described above. If you do that, you probably also want to view the
-    same older version of this website. Until spring 2021, the website was
-    hosted at https://nbis-reproducible-research.readthedocs.io.
-    Locate the version box in the bottom right corner of the website and
-    select the corresponding version.
 
 ## Setup for Windows users
 
@@ -48,9 +41,9 @@ resources:
     then add `nameserver 8.8.8.8` to the bottom of the file and save it.
 
 Open a bash shell Linux terminal and clone the GitHub repository containing all
-files you will need for completing the tutorials as follows. First, `cd` into
-a directory on your computer (or create one) where it makes sense to download
-the course directory.
+files you will need for completing the tutorials as follows. First, create and move into 
+a directory on your computer where it makes sense to work during
+the course e.g. `~/training-reproducible-research-area`.
 
 !!! tip
 
@@ -61,259 +54,45 @@ the course directory.
     Linux terminal by navigating to `/mnt/c/`.
 
 ```bash
-cd /path/to/your/directory
-git clone https://github.com/NBISweden/workshop-reproducible-research.git
-cd workshop-reproducible-research
+mkdir ~/training-reproducible-research-area
+cd ~/training-reproducible-research-area
 ```
 
-Whenever a setup instruction specifies Mac or Linux (*i.e.* only those two,
-with no alternative for Windows), please follow the Linux instructions.
+**Whenever a setup instruction specifies Mac or Linux (*i.e.* only those two,
+with no alternative for Windows), please follow the Linux instructions.**
 
-!!! tip
 
-    If you want to revisit the material from an older instance of this course,
-    you can do that using `git checkout tags/<tag-name>`, *e.g.* `git checkout
-    tags/course_1905`. To list all available tags, use `git tag`. Run this
-    command after you have `cd` into `workshop-reproducible-research` as
-    described above. If you do that, you probably also want to view the
-    same older version of this website. Until spring 2021, the website was
-    hosted at https://nbis-reproducible-research.readthedocs.io/en/latest/.
-    Locate the version box in the bottom right corner of the website and
-    select the corresponding version.
-
-## Installing Git
+# Git
 
 Chances are that you already have git installed on your computer. You can check
 by running *e.g.* `git --version`. If you don't have git, install it following
 the instructions [here]( https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 If you have a very old version of git you might want to update to a later version.
 
-### Configure git
+Git configutation will be done together during the training.
 
-If it is the first time you use git on your computer, you may want to configure
-it so that it is aware of your username and email. These should match those that
-you have registered on GitHub. This will make it easier when you want to sync
-local changes with your remote GitHub repository.
+# Conda
 
-```
-git config --global user.name "Mona Lisa"
-git config --global user.email "mona_lisa@gmail.com"
-```
+Conda installation and configutation will be done together during the training event.
 
-!!! tip
 
-    If you have several accounts (*e.g.* both a GitHub and Bitbucket account),
-    and thereby several different usernames, you can configure git on
-    a per-repository level. Change directory into the relevant local git
-    repository and run `git config user.name "Mona Lisa"`. This will set the
-    default username for that repository only.
+# Snakemake
 
-You will also need to configure the default branch name to be `main` instead of
-`master`:
+Snakemake installation and configutation will be done together during the training event.
 
-```bash
-git config --global init.defaultBranch "main"
-```
+# Nextflow
 
-The short version of why you need to do this is that GitHub uses `main` as the
-default branch while Git itself is still using `master`; please read the box
-below for more information.
+Nextflow installation and configutation will be done together during the training event.
 
-!!! note
+# R Markdown
 
-    The default branch name for Git and many of the online resources for hosting
-    Git repositories has traditionally been `master`, which historically comes
-    from the "master/slave" repositories of
-    [BitKeeper](https://mail.gnome.org/archives/desktop-devel-list/2019-May/msg00066.html).
-    This has been heavily discussed and in 2020 the decision was made by  many
-    ([including GitHub](https://sfconservancy.org/news/2020/jun/23/gitbranchname/))
-    to start using `main` instead. Any repository created with GitHub uses this
-    new naming scheme since October of 2020, and Git itself is currently
-    discussing implementing a similar change. Git did, however, introduce the
-    ability to set the default branch name when using `git init` in
-    [version 2.28](https://github.blog/2020-07-27-highlights-from-git-2-28/#introducing-init-defaultbranch),
-    instead of using a hard-coded `master`. We at NBIS want to be a part of this
-    change, so we have chosen to use `main` for this course.
+R Markdown installation and configutation will be done together during the training event.
 
-## Installing Conda
+# Jupyter
 
-Conda is installed by downloading and executing an installer from the Conda
-website, but which version you need depends on your operating system:
+Jupyter installation and configutation will be done together during the training event.
 
-```bash
-# Install Miniconda3 for 64-bit Mac
-curl -L https://repo.continuum.io/miniconda/Miniconda3-4.7.12.1-MacOSX-x86_64.sh -O
-bash Miniconda3-4.7.12.1-MacOSX-x86_64.sh
-rm Miniconda3-4.7.12.1-MacOSX-x86_64.sh
-```
-
-```bash
-# Install Miniconda3 for 64-bit Linux
-curl -L https://repo.continuum.io/miniconda/Miniconda3-4.7.12.1-Linux-x86_64.sh -O
-bash Miniconda3-4.7.12.1-Linux-x86_64.sh
-rm Miniconda3-4.7.12.1-Linux-x86_64.sh
-```
-
-!!! warning
-
-    If you already have installed Conda but want to update, you should be able
-    to simply run `conda update conda` and subsequently `conda init`, and skip
-    the installation instructions below.
-
-!!! warning
-    If you have a newer Apple computer with an M1 chip, make sure you have
-    installed [Rosetta](https://support.apple.com/en-us/HT211861) before you run
-    the installer. If you want to more fully utilise the new architecture,
-    head over to [Miniforge](https://github.com/conda-forge/miniforge#miniforge3)!
-
-The installer will ask you questions during the installation:
-
-- Do you accept the license terms? (Yes)
-- Do you accept the installation path or do you want to choose a different one?
-  (Probably yes)
-- Do you want to run `conda init` to setup Conda on your system? (Yes)
-
-Restart your shell so that the settings in `~/.bashrc`/`~/.bash_profile` can take
-effect. You can verify that the installation worked by running:
-
-```bash
-conda --version
-```
-
-> **Different Condas** <br>
-> There are three Conda-related things you may have encountered: the first is
-> *Conda*, the package and environment manager we've been talking about so far.
-> Second is *Miniconda*, which is the installer for Conda. The third is
-> *Anaconda*, which is a distribution of not only Conda, but also over 150
-> scientific Python packages. It's generally better to stick with only Conda,
-> *i.e.* installing with Miniconda, rather than installing 3 GB worth of
-> packages you may not even use.
-
-### Configuring Conda
-
-Lastly, we will setup the default channels (from where packages will be searched
-for and downloaded if no channel is specified).
-
-```
-conda config --add channels defaults
-conda config --add channels bioconda
-conda config --add channels conda-forge
-```
-
-## Installing Snakemake
-
-We will use Conda environments for the set up of this tutorial, but don't worry
-if you don't understand exactly what everything does - you'll learn all the
-details at the course. First make sure you're currently situated inside the
-tutorials directory (`workshop-reproducible-research/tutorials`) and then
-create the Conda environment like so:
-
-```bash
-conda env create -f snakemake/environment.yml -n snakemake-env
-conda activate snakemake-env
-```
-
-Check that Snakemake is installed correctly, for example by executing
-`snakemake --help`. This should output a list of available Snakemake settings.
-If you get `bash: snakemake: command not found` then you need to go back and
-ensure that the Conda steps were successful. Once you've successfully completed
-the above steps you can deactivate your Conda environment using `conda deactivate`
-and continue with the setup for the other tools.
-
-## Installing Nextflow
-
-We'll use Conda to install Nextflow as well: navigate to
-`workshop-reproducible-research/tutorials` and create the Conda environment:
-
-```bash
-conda env create -f nextflow/environment.yml -n nextflow-env
-conda activate nextflow-env
-```
-
-Check that Nextflow was installed correctly by running `nextflow -version`. Once
-you've successfully completed the installation you can deactive the environment
-using `conda deactivate` and continue with the other setups, as needed.
-
-## Installing R Markdown
-
-We also use Conda to install R Markdown: make sure your working directory is in
-the tutorials directory (`workshop-reproducible-research/tutorials`) and
-install the necessary R packages defined in the `environment.yml`:
-
-```bash
-conda env create -f rmarkdown/environment.yml -n rmarkdown-env
-```
-
-You can then activate the environment followed by running RStudio in the
-background from the command line:
-
-```bash
-conda activate rmarkdown-env
-rstudio &
-```
-
-> **The sluggishness of Conda** <br>
-> Some environments are inherently quite complicated in that they have many
-> and varied dependencies, meaning that the search space for the entire
-> dependency hierarchy becomes huge - leading to slow and sluggish
-> installations. This is often the case for R environments. This can be
-> improved by using Mamba, a faster wrapper around Conda. Simply run `conda
-> install -n base mamba` to install Mamba in your base environment, and
-> replace any `conda` command with `mamba` - except activating and
-> deactivating environments, which still needs to be done using Conda.
-
-Once you've successfully completed the above steps you can deactivate your Conda
-environment using `conda deactivate` and continue with the setup for the other
-tools.
-
-> **Windows users** <br>
-> In case you are having trouble installing R and RStudio using Conda, both
-> run well directly on Windows and you may therefore want to install Windows
-> versions of these software for this tutorial (if you haven't done so already).
-> Conda is, however, the recommended way. If you're having issues with
-> graphical applications, please have a look at [this website](https://seanthegeek.net/234/graphical-linux-applications-bash-ubuntu-windows/);
-> scroll down to the "Graphical applications".
-
-> **RStudio and Conda** <br>
-> In some cases RStudio doesn't play well with Conda due to differing
-> libpaths. The first and simplest thing to try is to always start RStudio from
-> the command line (`rstudio &`). If you're still having issues, check the
-> available library path by `.libPaths()` to make sure that it points to a path
-> within your Conda environment. It might be that `.libPaths()` shows multiple
-> library paths, in which case R packages will be searched for by R in all these
-> locations. This means that your R session will not be completely isolated in
-> your Conda environment and that something that works for you might not work
-> for someone else using the same Conda environment, simply because you had
-> additional packages installed in the second library location. One way to force
-> R to just use the conda library path is to add a `.Renviron` file to the
-> directory where you start R with these lines:
-
-    ```
-    R_LIBS_USER=""
-    R_LIBS=""
-    ```
-
-> ... and restart RStudio. The `rmarkdown/` directory in the course materials
-> already contains this file, so you shouldn't have to add this yourself, but
-> we mention it here for your future projects.
-
-## Installing Jupyter
-
-Let's continue using Conda for installing software, since it's so convenient to
-do so! Move in the tutorials directory (`workshop-reproducible-research/tutorials`),
-create a Conda environment from the `jupyter/environment.yml` file and test
-the installation of Jupyter, like so:
-
-```bash
-conda env create -f jupyter/environment.yml -n jupyter-env
-conda activate jupyter-env
-```
-
-Once you've successfully completed the above steps you can deactivate your Conda
-environment using `conda deactivate` and continue with the setup for the other
-tools.
-
-## Installing Docker
+# Docker
 
 Installing Docker is quite straightforward on Mac or Windows and a little more
 cumbersome on Linux. Note that Docker runs as root, which means that you have to
@@ -321,7 +100,7 @@ have `sudo` privileges on your computer in order to install or run Docker. When
 you have finished installing docker, regardless of which OS you are on, please
 type `docker --version` to verify that the installation was successful!
 
-### macOS
+## macOS intel/M1/M2
 
 Go to [docker.com](https://docs.docker.com/docker-for-mac/install/#download-docker-for-mac)
 and select download option that is suitable for your computer's architecture
@@ -332,7 +111,7 @@ window and click the Docker app from the Applications menu. Now it's basically
 just to click "next" a couple of times and we should be good to go. You can
 find the Docker icon in the menu bar in the upper right part of the screen.
 
-### Linux
+## Linux
 
 How to install Docker differs a bit depending on your Linux distribution, but
 the steps are the same. Please follow the instructions for your distribution on
@@ -346,7 +125,7 @@ the steps are the same. Please follow the instructions for your distribution on
     user to the group `docker`. Here are instructions for how to do this:
     [https://docs.docker.com/engine/installation/linux/linux-postinstall/](https://docs.docker.> com/engine/installation/linux/linux-postinstall/).
 
-### Windows
+## Windows
 
 In order to run Docker on Windows your computer must support *Hardware
 Virtualization Technology* and virtualization must be enabled. This is
@@ -367,7 +146,10 @@ Docker whale icon in the task bar and select *Settings*. Choose *Resources* and
 select *WPS integration*. Enable integration with the Linux subsystem and click
 *Apply & Restart*; also restart the Linux subsystem.
 
-## Installing Singularity
+# Singularity
+
+Singularity installation might be tiedous. No worries if you do not succeed the installation. 
+We can reiew the installation procedure during the training event.
 
 Installation of Singularity depends, again, on your operating system. When you
 have finished, regardless of your OS, please type `singularity --version` to
@@ -384,18 +166,33 @@ below may help you.
 >   VirtualBox is running with `vagrant status`.
 > - Now, type `vagrant ssh`, which will open the Vagrant VirtualBox.
 > - The first time you open the Vagrant VirtualBox like this, you will have to
->   download the course material to obtain a copy for the Singularity tutorial
->   within the Vagrant VirtualBox by typing `git clone https://github.com/NBISweden/workshop-reproducible-research.git`.
 
-### macOS
+## macOS intel
 
 Please follow the Mac-specific instructions at the [Singularity website](https://sylabs.io/guides/latest/admin-guide/installation.html#installation-on-windows-or-mac).
+!!! Notes
+    the command   
+    `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`  
+    must be replaced by this one  
+    `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`  
 
-### Linux
+
+## macOS M1/M2
+
+You're out of luck this time, as often with new OS and chip architectures, the tools may not yet be compatible.
+The proper way here is to use a linux virtual machine. You will have to download a linux distribution iso image and install it via a virtual machine manager.
+Please follow the instruction [here](https://sylabs.io/2023/03/installing-singularityce-on-macos-with-apple-silicon-using-utm-rocky/).
+
+!!! Notes
+    You will need a linux iso image ARM architecture compatible.  
+    You can find rockylinux iso image at this address: [https://rockylinux.org/download](https://rockylinux.org/download) 
+    Or use Ubuntu Server for ARM available here: [https://ubuntu.com/download/server/arm](https://ubuntu.com/download/server/arm)
+
+## Linux
 
 Follow the Linux-specific instruction at the [Singularity website](https://sylabs.io/guides/latest/admin-guide/installation.html#installation-on-linux).
 
-### Windows
+## Windows
 
 Please follow the Windows-specific instructions at the [Singularity website](https://sylabs.io/guides/latest/admin-guide/installation.html#installation-on-windows-or-mac).
 
@@ -404,21 +201,5 @@ Please follow the Windows-specific instructions at the [Singularity website](htt
     download but the installation of Singularity was successful even without it.
 
     Version 6.1.28 of "Virtual box for Windows" may not work, please install
-    version 6.1.26 from [here](https://www.virtualbox.org/wiki/Download_Old_Builds_6_1)
+    Version 6.1.26 from [here](https://www.virtualbox.org/wiki/Download_Old_Builds_6_1)
     in case you encounter problems when trying to start the Vagrant VirtualBox.
-
-## Testing sra-tools
-On some computers we've found that the package `sra-tools` which is used in the
-course is not working properly. The error seems to be related to some certificate
-used to communicate with remote read archives and may affect all environments
-with `sra-tools` on the dependency list.
-
-If you run into errors with the program `fastq-dump` from the `sra-tools` package
-try the following:
-
-1. Remove `sra-tools` from the relevant environment: `conda remove sra-tools`
-2. Download the most recent binaries for your operating system from [here](https://github.com/ncbi/sra-tools/wiki/02.-Installing-SRA-Toolkit#the-sra-toolkit-provides-64-bit-binary-installations-for-the-ubuntu-and-centos-linux-distributions-for-mac-os-x-and-for-windows) (example shown for Mac OSX): `curl --output sratoolkit.tar.gz https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/current/sratoolkit.current-mac64.tar.gz`
-3. Create a temporary directory for the installation: `mkdir tmp_out`
-4. Extract the binary files: `tar -C tmp_out -zxvf sratoolkit.tar.gz */bin/*`
-5. Copy binary files into the conda environment: `cp -r tmp_out/*/bin/* $CONDA_PREFIX/bin/`
-6. Remove the downloaded files: `rm -r sratoolkit.tar.gz tmp_out/`

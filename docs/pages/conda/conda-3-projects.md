@@ -1,3 +1,5 @@
+# Environments in projects
+
 We have up until now specified which Conda packages to install directly on the
 command line using the `conda create` and `conda install` commands. For working
 in projects this is not the recommended way. Instead, for increased control and
@@ -5,25 +7,26 @@ reproducibility, it is better to use an *environment file* (in [YAML format](htt
 that specifies the packages, versions and channels needed to create the
 environment for a project.
 
-Throughout these tutorials we will use a case study where we analyze an RNA-seq
-experiment with the multiresistant bacteria MRSA (see [intro](introduction)).
-You will now start to make a Conda YAML file for this MRSA project. The file
-will contain a list of the software and versions needed to execute the analysis
-code.
+Throughout these tutorials we will use a case study where we analyze an RNA-seq experiment with the multiresistant bacteria MRSA (see intro). You will now start to make a Conda yml file for this MRSA project. The file will contain a list of the software and versions needed to execute the analysis code.
 
-In this Conda tutorial, all code for the analysis is available in the script
-`code/run_qc.sh`. This code will download the raw FASTQ-files and subsequently
-run quality control on these using the FastQC software.
+In this Conda tutorial, all code for the analysis is available in the script `~/training-reproducible-research-area/{{config.repo_name}}/code/run_qc.sh`. This code will download the raw FASTQ-files and subsequently run quality control on these using the FastQC software.
 
-# Working with environments
+We will start by making a Conda yml-file that contains the required packages to perform these two steps. Later in the course, you will update the Conda yml-file with more packages, as the analysis workflow is expanded.
 
-We will start by making a Conda YAML-file that contains the required packages to
-perform these two steps. Later in the course, you will update the Conda
-YAML-file with more packages, as the analysis workflow is expanded.
+* First be sure to be located in the tutorial dedicated folder:
+
+```bash
+cd ~/training-reproducible-research-area/conda_tutorial
+```
+
+* Copy the `run_qc.sh` locally to make your life easier.
+
+```bash
+cp ~/training-reproducible-research-area/{{config.repo_name}}/code/run_qc.sh .
+```
 
 * Let's get going! Make a YAML file called `environment.yml` looking like
-  this, and save it in the current directory (which should be
-  `workshop-reproducible-research/tutorials/conda`):
+  this, and save it in the current directory:
 
 ```yml
 channels:
@@ -57,9 +60,26 @@ conda env create -n project_mrsa -f environment.yml
 
 * Activate the environment!
 
-* Now we can run the code for the MRSA project found in `code/run_qc.sh`,
-  either by running `bash code/run_qc.sh` or by opening the `run_qc.sh` file
+* Now we can run the code for the MRSA project found in `run_qc.sh`,
+  either by running `bash run_qc.sh` or by opening the `run_qc.sh` file
   and executing each line in the terminal one by one. Do this!
+
+!!! warning
+    On some computers we've found that the package `sra-tools` which is used in the
+    course is not working properly. The error seems to be related to some certificate
+    used to communicate with remote read archives and may affect all environments
+    with `sra-tools` on the dependency list.
+
+    If you run into errors with the program `fastq-dump` from the `sra-tools` package
+    try the following:
+
+    1. Remove `sra-tools` from the relevant environment: `conda remove sra-tools`
+    2. Download the most recent binaries for your operating system from [here](https://github.com/ncbi/sra-tools/wiki/02.-Installing-SRA-Toolkit#the-sra-toolkit-provides-64-bit-binary-installations-for-the-ubuntu-and-centos-linux-distributions-for-mac-os-x-and-for-windows) (example shown for Mac OSX): `curl --output sratoolkit.tar.gz https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/current/sratoolkit.current-mac64.tar.gz`
+    3. Create a temporary directory for the installation: `mkdir tmp_out`
+    4. Extract the binary files: `tar -C tmp_out -zxvf sratoolkit.tar.gz */bin/*`
+    5. Copy binary files into the conda environment: `cp -r tmp_out/*/bin/* $CONDA_PREFIX/bin/`
+    6. Remove the downloaded files: `rm -r sratoolkit.tar.gz tmp_out/`
+
 
 This should download the project FASTQ files and run FastQC on them (as
 mentioned above).
@@ -97,7 +117,7 @@ mentioned above).
 Note that all that was needed to carry out the analysis and generate these
 files and results was `environment.yml` (that we used to create a Conda
 environment with the required packages) and the analysis code in
-`code/run_qc.sh`.
+`run_qc.sh`.
 
 # Keeping track of dependencies
 

@@ -1,4 +1,4 @@
-<iframe id="iframepdf" src="../../../lectures/conda/conda.pdf" frameborder="0" width="640" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> 
+<iframe id="iframepdf" src="../../../lectures/conda/conda_2023.pdf" frameborder="0" width="640" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> 
 
 Conda is a package and environment manager. As a package manager it enables you
 to install a wide range of software and tools using one simple command: `conda
@@ -32,11 +32,3 @@ specify the package name, version (optional) and channel to download from.
 A Conda *environment* is essentially a directory that is added to your PATH and
 that contains a specific collection of packages that you have installed.
 Packages are symlinked between environments to avoid unnecessary duplication.
-
-This tutorial depends on files from the course GitHub repo. Take a look at the
-[setup](pre-course-setup) for instructions on how to set it up if, you haven't
-done so already. Then open up a terminal and go to
-`workshop-reproducible-research/tutorials/conda`. Instructions below assume
-that you are standing in `workshop-reproducible-research/tutorials/conda/`
-unless otherwise specified (*e.g.* if it says "create a file", it means save it
-in `workshop-reproducible-research/tutorials/conda/`).

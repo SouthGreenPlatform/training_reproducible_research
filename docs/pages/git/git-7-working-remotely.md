@@ -63,7 +63,15 @@ Log in to your GitHub account and press the *New* button:
 * Make sure you are listed as the owner
 * Add a repository name, *e.g.* `git_tutorial`
 * You can keep the repo private or make it public, as you wish
-* Skip including a README, a `.gitignore` and licence
+* Skip including a README, a `.gitignore` and license
+
+!!! note
+    When creating a new repository the best practices is to directly set the README, 
+    the `.gitignore` and the licence. In our case we must not because we already have initiated a 
+    repository locally that we want to push remotly. If we put anything 
+    in the remote repository before linking it to the local one, a new tracking history will 
+    be created in the remote and it will be divergent compared to the local tracking history. 
+    You will end up with a `fatal: refusing to merge unrelated histories` error.
 
 > ![](images/github_new_repo.png){ width=600px }
 
@@ -130,8 +138,8 @@ see. Let's try it out!
 ```markdown
 # A Git tutorial
 
-This repository contains tutorial information related to the **NBIS/ELIXIR** course
-*Tools for Reproducible Research*, specifically the session on using the `git`
+This repository contains tutorial information related to the **SouthGreen** course
+*Tools for Reproducible Research* based on the **NBIS/ELIXIR** material, specifically the session on using the `git`
 software for version control.
 
 ## Links

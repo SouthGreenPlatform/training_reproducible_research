@@ -58,7 +58,7 @@ Scientific Data (2016)]</a>
 - Find suitable data repositories.
 - Strive towards uploading data to its final destination already at the beginning of a project.
 
-<a href="https://www.vr.se/english/calls-and-decisions/grant-terms-and-conditions/data-management-plan.html"> VR Data management plan requirements </a>
+<a href="https://anr.fr/fileadmin/documents/2019/ANR__Modele_de_DMP_francais_DMPOPIDoR_2019_07_24_mis_en_page_2.pdf"> ANR Data management plan requirements </a>
 
 ---
 
@@ -160,7 +160,7 @@ README.md
 - <a href="https://atom.io/" .green[Atom] </a> 
 - <a href="https://rstudio.com/" .green[RStudio] </a>
 - <a href="https://www.jetbrains.com/pycharm/" .green[PyCharm] </a>
-
+- <a href="https://code.visualstudio.com" .green[VSCode] </a>
 ---
 
 class: center, middle

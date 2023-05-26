@@ -89,10 +89,13 @@ extra:
 nav:
     - Home: index.md
     - Tutorials:
-        - Introduction: pages/introduction/introduction.md
+        - Introduction SouthGreen: pages/introduction/introduction_southgreen.md
+        - Roundtable Introduce Yourself: pages/introduction/roundtable.md
+        - Introduction Reproducible Research: pages/introduction/introduction_rr.md
         - Data Management: pages/data-management/data-management.md
         - Git:
           - Introduction: pages/git/git-1-introduction.md
+          - Setup: pages/git/git-setup.md
           - Creating a git repository: pages/git/git-2-creating-repositories.md
           - Committing changes: pages/git/git-3-committing-changes.md
           - Ignoring files: pages/git/git-4-ignoring-files.md
@@ -103,6 +106,7 @@ nav:
           - Extra material: pages/git/git-9-extra-material.md
         - Conda:
           - Introduction: pages/conda/conda-1-introduction.md
+          - Installation: pages/conda/conda-installation.md
           - The basics: pages/conda/conda-2-the-basics.md
           - Projects: pages/conda/conda-3-projects.md
           - Extra material: pages/conda/conda-4-extra-material.md
@@ -153,3 +157,8 @@ nav:
           - Introduction: pages/quarto/quarto-1-introduction.md
         - 'Making a project reproducible': 'pages/project/project.md'
         - 'Take down': 'pages/take_down/take_down.md'
+    - Cheat sheet:
+        - Bash Cheat sheet: pages/cheat_sheet/bash/bash.md
+        - Git cheat-sheet official: pages/cheat_sheet/git/git_official.md
+        - Conda Cheat sheet: pages/cheat_sheet/conda/conda.md
+        - Interesting ressources: pages/cheat_sheet/interesting_ressources.md

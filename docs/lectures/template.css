@@ -59,7 +59,7 @@ table_rot {
     @include transform-origin(0 0);
 }
 
-/* SciLifeLab logo in bottom left corner  */
+/* logo in bottom left corner  */
 div.southgreen-logo {
     content: "";
     background-image: url("https://www.southgreen.fr/sites/southgreen.fr/themes/southgreen/logo.png");

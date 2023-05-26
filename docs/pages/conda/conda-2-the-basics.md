@@ -25,7 +25,7 @@ environment that is active.
 * To see all your environments you can run:
 
 ```bash
-conda info --envs
+conda info --envs # you can also use "conda env list" command
 ```
 
 The active environment will be marked with an asterisk.
@@ -46,6 +46,7 @@ conda env export --from-history > environment.yml
 where `--from-history` only reports the packages requested to be installed
 and not additional dependancies. A caveat is that if no version was
 originally specified, then it is not included in the export file either.
+Check the `environment.yml`file content.
 
 * Now, deactivate the environment by running `conda deactivate`.
 * List all environments again. Which environment is now marked as active?
