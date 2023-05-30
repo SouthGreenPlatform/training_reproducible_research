@@ -104,8 +104,8 @@ course, so make sure you've gone through it all for the course start.
 * Thomas Denecker (teacher)
 * Aurore Comte (teacher)
 * Gautier Sarah (teacher)
-* Julie ORJUELA (teacher)
-* nicolas fernandez (teacher)
+* Julie Orjuela (teacher)
+* Nicolas Fernandez (teacher)
 
 # Contact
 
