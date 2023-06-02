@@ -1,4 +1,4 @@
-<iframe id="iframepdf" src="../../../lectures/nextflow/nextflow.pdf" frameborder="0" width="640" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe id="iframepdf" src="../../../lectures/nextflow/nextflow_2023.pdf" frameborder="0" width="640" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 [Nextflow](https://www.nextflow.io/) is a *workflow management system* (WfMS),
 and is one of the most common such systems within the bioinformatic and
