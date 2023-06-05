@@ -30,8 +30,8 @@ One of the largest and most widely used container-based technologies is
 *Docker*. Just as with Git, Docker was designed for software development but is
 rapidly becoming widely used in scientific research. Another container-based
 technology is *Singularity*, which was developed to work well in computer
-cluster environments, such as Uppmax. We will cover both Docker and Singularity
-in this course, but the focus will be be on the former (since that is the most
+cluster environments. We will cover both Docker and Singularity
+in this course, but the focus will be on the former (since that is the most
 widely used and runs on all three operating systems).
 
 This tutorial depends on files from the course GitHub repo. Take a look at the

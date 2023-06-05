@@ -8,12 +8,12 @@ permissions so that you do not gain access to additional resources while inside
 the container.
 
 Here we give a brief introduction to Singularity and specifically how it can be
-used on HPC clusters such as Uppmax.
+used on HPC clusters.
 
 If you want to read more, here are some additional resources:
 
 * [Singularity docs](https://sylabs.io/guides/master/user-guide/)
-* [Uppmax Singularity user guide](
+* [HPC Singularity user guide](
   https://www.uppmax.uu.se/support/user-guides/singularity-user-guide/)
 
 !!! Info "Singularity and Apptainer"
@@ -34,7 +34,7 @@ we will cover here (but feel free to read more about this in _e.g._ the
 
 Instead, we will take advantage of the fact that Singularity can convert Docker
 images to the Singularity Image Format (SIF). This is great if there's a Docker
-image that you want to use on an HPC cluster such as Uppmax where you cannot use
+image that you want to use on an HPC cluster where you cannot use
 Docker.
 
 !!! Tip
@@ -93,12 +93,12 @@ A common problem with Singularity is that you can only create local builds if
 you are working on a Linux system, as local builds for MacOS and Windows are
 currently not supported. This means that you might favour using Docker instead
 of Singularity, but what happens when you need to use a HPC cluster such as
-Uppmax? Docker won't work there, as it requires root privileges, so Singularity
+HPC? Docker won't work there, as it requires root privileges, so Singularity
 is the only solution. You can only run Singularity images there, however, not
 *build* them...
 
-So, how do you get a Singularity image for use on Uppmax if you can't build it
-either locally or on Uppmax? While it's possible to do remote builds (via the
+So, how do you get a Singularity image for use on HPC if you can't build it
+either locally or on HPC? While it's possible to do remote builds (via the
 `--remote` flag), in our experience this functionality is not stable and for a
 lot of cases it won't help. Since most researchers will want to work in private
 Git repositories they can't supply their Conda `environment.yml` file to remote
