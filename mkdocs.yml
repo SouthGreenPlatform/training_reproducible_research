@@ -125,9 +125,17 @@ nav:
             - Targets: pages/snakemake/snakemake-8-targets.md
             - Shadow rules: pages/snakemake/snakemake-9-shadow-rules.md
             - Generalizing workflows: pages/snakemake/snakemake-10-generalizing-workflows.md
-            - Extra materiel: pages/snakemake/snakemake-11-extra-material.md
+            - Extra material: pages/snakemake/snakemake-11-extra-material.md
           - Nextflow:
-            - Introduction: pages/nextflow/nextflow-1-introduction_light.md
+            - Introduction: pages/nextflow/nextflow-1-introduction.md
+            - Practical light: pages/nextflow/nextflow-nfcore.md
+            - The basics: pages/nextflow/nextflow-2-the-basics.md
+            - Executing workflows: pages/nextflow/nextflow-3-executing-workflows.md
+            - Working with process: pages/nextflow/nextflow-4-working-with-processes.md
+            - Workflow configuration: pages/nextflow/nextflow-5-workflow-configuration.md
+            - Optmising the MRSA workflow: pages/nextflow/nextflow-6-optimising-the-mrsa-workflow.md
+            - Extra material: pages/nextflow/nextflow-7-extra-material.md
+
         - Containers:
           - Introduction: pages/containers/containers-1-introduction.md
           - The basics: pages/containers/containers-2-the-basics.md

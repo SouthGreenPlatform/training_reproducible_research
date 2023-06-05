@@ -95,27 +95,24 @@ as well, here exemplified using an `environment.yml` file:
 process.conda = 'mrsa-environment.yml'
 ```
 
-# Running Nextflow on Uppmax
+# Running Nextflow on HPC
 
-A lot of researchers in Sweden are using the Uppmax computer cluster in Uppsala,
-which is easily handled by Nextflow. What you need to do is to add the following
-*profile* to your `nextflow.config` file:
+A lot of researchers use HPC cluster, which is easily handled by Nextflow. 
+What you need to do is to add an appropriate *profile* to your `nextflow.config` file. 
+Example for iTrop:
 
 ```
 profiles {
 
-    // Uppmax general profile
-    uppmax {
-        params{
-            account        = null
-        }
+    // Itrop general profile
+    itrop {
         process {
             executor       = 'slurm'
             clusterOptions = "-A '${params.account}'"
             memory         = { 6.GB * task.attempt }
             cpus           = { 1 * task.attempt }
             time           = { 10.h * task.attempt }
-            scratch        = '$SNIC_TMP'
+            scratch        = '/scracth/$USER'
             errorStrategy  = 'retry'
             maxRetries     = 1
         }
@@ -124,19 +121,18 @@ profiles {
 ```
 
 This will add a profile to your workflow, which you can access by running the
-workflow with `-profile uppmax`. You will also have to supply an extra parameter 
-`account` which corresponds to your SNIC project account, but the rest you can
-leave as-is, unless you want to tinker with *e.g.* compute resource
+workflow with `-profile itrop`. You can
+leave the profile as-is, unless you want to tinker with *e.g.* compute resource
 specifications. That's all you need! Nextflow will take care of communications
-with SLURM (the system used by Uppmax, specified by the `executor` line) and
+with SLURM (the system used by iTrop, specified by the `executor` line) and
 will send off jobs to the cluster for you, and everything will look exactly the
 same way as if you were executing the pipeline locally.
 
 The `memory`, `cpus` and `time` lines define the various resources Nextflow will
 use as well as how much to automatically increase them by if re-trying failed
 tasks; this, in turn, is specified by the `errorStrategy` and `maxRetries`
-variables. The `scratch` variable defines where each node's local storage is
-situated, which gives Nextflow the most optimal access to the Uppmax file system
+variables. The `scratch` defines where each node's local storage is
+situated, which gives Nextflow the most optimal access to the cluster file system
 for temporary files.
 
 # Advanced channel creation
@@ -271,7 +267,7 @@ you don't need to do anything other than find out what parameters you should run
 it with.
 
 Each pipeline comes with extensive documentation, test datasets that you can
-use to practice on, can be run on both HPCs like Uppmax, cloud services like
+use to practice on, can be run on both HPCs like iTrop, cloud services like
 AWS or locally on your own computer. All pipelines support both Conda and
 Docker/Singularity, and you can additionally run specific versions of the
 pipelines, allowing for full reproducibility of your analyses. If you want to
