@@ -73,7 +73,7 @@
     <tr>
         <td style="padding:5px"> <font size="3"> 16:45 </td>
         <td style="padding:5px"> <font size="3"> Wrap up: Conda tutorial </td>
-        <td style="padding:5px"> <font size="3">  </td>
+        <td style="padding:5px"> <font size="3"> GS / NF </td>
     </tr>
 </table>
 
@@ -106,7 +106,7 @@
     <tr>
         <td style="padding:5px"> <font size="3"> 10:45 </td>
         <td style="padding:5px"> <font size="3"> ... continued: Snakemake tutorial </td>
-        <td style="padding:5px"> <font size="3">  </td>
+        <td style="padding:5px"> <font size="3"> GS / NF </td>
     </tr>
     <tr>
         <td style="padding:5px"> <font size="3"> 12:00 </td>
@@ -116,12 +116,12 @@
     <tr>
         <td style="padding:5px"> <font size="3"> 13:00 </td>
         <td style="padding:5px"> <font size="3"> ... continued: Snakemake tutorial </td>
-        <td style="padding:5px"> <font size="3">  </td>
+        <td style="padding:5px"> <font size="3"> GS / NF </td>
     </tr>
     <tr>
         <td style="padding:5px"> <font size="3"> 14:15 </td>
         <td style="padding:5px"> <font size="3"> Wrap-up Snakemake tutorial </td>
-        <td style="padding:5px"> <font size="3">  </td>
+        <td style="padding:5px"> <font size="3"> GS / NF </td>
     </tr>
     <tr>
         <td style="padding:5px"> <font size="3"> 14:30 </td>
@@ -242,10 +242,10 @@ The above schedule is approximate; variations may occur.
 <table>
     <tr>
         <td style="width:30px"> <b> AC </b> </td>
-        <td> Aurore comte </td>
+        <td> Aurore Comte </td>
     </tr>
     <tr>
-        <td> <b> GT </b> </td>
+        <td> <b> GS </b> </td>
         <td> Gautier Sarah </td>
     </tr>
     <tr>
