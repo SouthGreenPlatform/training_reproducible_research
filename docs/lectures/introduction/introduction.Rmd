@@ -42,7 +42,7 @@ class: center, middle
 </div>
 <div class="image-with-text">
     <img src="https://bioinfo.ird.fr/wp-content/uploads/elementor/thumbs/profil_julie-p3khsjuamh9f3alnps4nrhysh8f5hzaivqywiksfgw.jpg" style="height:120px" hspace=30/>
-    <p style="font-size:16px;">Julie Orjuela Kutschera</p>
+    <p style="font-size:16px;">Julie Orjuela</p>
 </div>
 <div class="image-with-text">
     <img src="https://www.southgreen.fr/sites/southgreen.fr/files/5896_101049108989_4444344_n.jpg" style="height:120px" hspace=30/>
