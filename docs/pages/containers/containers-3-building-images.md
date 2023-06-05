@@ -127,7 +127,7 @@ The first command will update the apt-get package lists and the second will
 install the packages `bzip2`, `ca-certificates`, `curl`, `fontconfig`, `git`,
 `language-pack-en`, `tzdata`, `vim`, `unzip` and `wget`. Say that you build this
 image now, and then in a month's time you realize that you would have liked a
-Swedish language pack instead of an English. You change to `language-pack-sv`
+French language pack instead of an English. You change to `language-pack-fr`
 and rebuild the image. Docker detects that there is no layer with the new
 list of packages and reruns the second `RUN` command. *However, there is no
 way for Docker to know that it should also update the apt-get package lists*.
@@ -179,7 +179,7 @@ ENV LC_LANG en_US.UTF-8
 
 Here we use the new instruction `ENV`. The first command adds `conda` to the
 path, so we can write `conda install` instead of `/usr/miniconda3/bin/conda install`.
-The next two commands set an UTF-8 character encoding so that we can use
+The next two commands set a UTF-8 character encoding so that we can use
 weird characters (and a bunch of other things).
 
 ```no-highlight
