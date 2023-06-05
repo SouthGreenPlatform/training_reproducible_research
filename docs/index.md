@@ -1,8 +1,9 @@
+{% raw %}
 # Tools for Reproducible Research
 
 ![](pages/images/achievement-agreement-arms-1068523.jpg)
 
-# Course overview
+## Course overview
 
 <img src="https://www.svgrepo.com/show/305241/github.svg"
     width="20" height="20"/>
@@ -31,7 +32,7 @@ realize the immediate personal benefits: an organized and structured way of
 working. The person that most often has to reproduce your own analysis is your
 future self!
 
-# Course content and learning outcomes
+## Course content and learning outcomes
 
 The following topics and tools are covered in the course:
 
@@ -58,7 +59,7 @@ At the end of the course, students should be able to:
 * Use Docker and Singularity to distribute containerized computational
   environments
 
-# Application
+## Application
 
 This is an {{config.extra.institute}} course. The course is open for PhD students, postdocs,
 group leaders and core facility staff related to the {{config.extra.institute}} Platform (IRD,
@@ -83,22 +84,22 @@ valid for formal credits or not.
 
 By accepting to participate in the course, you agree to follow the [Code of Conduct](pages/course-information/code-of-conduct.md).
 
-# Schedule
+## Schedule
 
 You can find the course schedule at [this page](pages/course-information/schedule.md).
 
-# Location
+## Location
 
 This course round is given on site. It will take place in the Badiane room at Agropolis.
 
-# Course material
+## Course material
 
 The [pre-course setup](pages/course-information/pre-course-setup.md)
 page lists all the information you need before the course starts. The most
 important part is the installation and setup of all the tools used in the
 course, so make sure you've gone through it all for the course start.
 
-# Teachers
+## Teachers
 
 * Jacques Dainat (course responsible)
 * Thomas Denecker (teacher)
@@ -107,6 +108,12 @@ course, so make sure you've gone through it all for the course start.
 * Julie Orjuela (teacher)
 * Nicolas Fernandez (teacher)
 
-# Contact
+## Contact
 
 To contact us, please send a mail using the contact form available [here]({{contact}}).
+
+## Acknowledgement
+
+This work is based on the NBIS / ELIXIR course *Tools for Reproducible Research* that can be found [here](https://github.com/NBISweden/workshop-reproducible-research). We extend our gratitude to the creators and providers of the training material used in this course.
+
+{% endraw %}

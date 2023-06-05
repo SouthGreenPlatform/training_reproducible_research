@@ -1,3 +1,4 @@
+{% raw %}
 <h1> Day 1 </h1>
 <table class="table table-hover table-condensed" border=1; style="width:800px;">
     <thead style="background-color:{{config.extra.color_table_header}}";>
@@ -265,3 +266,4 @@ The above schedule is approximate; variations may occur.
         <td> Thomas Denecker </td>
     </tr>
 </table>
+{% endraw %}

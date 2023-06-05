@@ -77,6 +77,7 @@ plugins:
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - minify:
       minify_html: true
+  - external-markdown
   - macros
 
 # Customization
@@ -128,7 +129,7 @@ nav:
             - Extra material: pages/snakemake/snakemake-11-extra-material.md
           - Nextflow:
             - Introduction: pages/nextflow/nextflow-1-introduction.md
-            - Practical light: pages/nextflow/nextflow-nfcore.md
+            - Getting started with nf-core: pages/nextflow/nextflow-nfcore.md
             - The basics: pages/nextflow/nextflow-2-the-basics.md
             - Executing workflows: pages/nextflow/nextflow-3-executing-workflows.md
             - Working with process: pages/nextflow/nextflow-4-working-with-processes.md
