@@ -1,6 +1,6 @@
 # Data management and project organization
 
-<iframe id="iframepdf" src="../../../lectures/data-management/data-management.pdf" frameborder="0" width="640" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe id="iframepdf" src="../../../lectures/data-management/data_management_2023.pdf" frameborder="0" width="640" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 Good data organisation is the foundation towards working reproducibly for any research project. It not only sets you up well for an analysis, but it also makes it easier to come back to the project later and share with collaborators, including your most important collaborator – the future you.
 
