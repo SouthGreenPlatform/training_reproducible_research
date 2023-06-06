@@ -1,3 +1,4 @@
+{% raw %}
 !!! Warning
     To properly start this training session, you must be within a folder
     where it makes sense to work during the course:  
@@ -132,3 +133,5 @@ are files in the directory that are not version tracked by Git.
       amongst other things, the status of the current directory (version-tracked  or not),
       the status of files contained in your reposiory (Tracked or not), of a Git clone 
       in relation to the online remote repository, etc.
+
+{% endraw %}

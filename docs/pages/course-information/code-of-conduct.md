@@ -1,3 +1,4 @@
+{% raw %}
 # {{config.extra.institute}} Training Code of Conduct
 
 Training is one of the core values of {{config.extra.institute}}, and benefits from the contributions
@@ -29,3 +30,4 @@ training events:
  * Show courtesy and respect towards everyone involved in this training event
 
 For an extended description please see the [ELIXIR Code of Conduct](https://elixir-europe.org/events/code-of-conduct).
+{% endraw %}

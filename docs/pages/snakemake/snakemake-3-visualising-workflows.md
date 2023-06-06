@@ -1,3 +1,4 @@
+{% raw %}
 All that we've done so far could quite easily be done in a simple shell script
 that takes the input files as parameters. Let's now take a look at some of the
 features where a WfMS like Snakemake really adds value compared to a more
@@ -246,3 +247,4 @@ the other tutorials instead.
     - How Snakemake reruns relevant parts of the workflow after
       there have been changes.
     - How Snakemake tracks changes to files and code in a workflow
+{% endraw %}

@@ -91,6 +91,7 @@ For the extensions:
 For the plugins:  
 `pip install mkdocs-minify-plugin`  
 `pip install mkdocs-macros-plugin`
+`pip install mkdocs-embed-external-markdown`
 
 ##### Conda
 
@@ -121,7 +122,7 @@ conda activate education
 
 ##  Acknowledgement
 
- * NBIS - This work is based on the NBIS / ELIXIR course *Tools for Reproducible Research* course that can be find [here](https://github.com/NBISweden/workshop-reproducible-research).
+ * NBIS - This work is based on the NBIS / ELIXIR course *Tools for Reproducible Research* that can be found [here](https://github.com/NBISweden/workshop-reproducible-research).
  [<img align="right" src="images/NBIS.png" width="100" height="50" />](https://nbis.se)
  * @jhayer and @HadrienG about help in use and rendering with mkdocs and other features.
  * All contributors

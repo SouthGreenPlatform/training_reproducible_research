@@ -1,3 +1,4 @@
+{% raw %}
 # Environments in projects
 
 We have up until now specified which Conda packages to install directly on the
@@ -189,3 +190,5 @@ your shorter execution times!
     - How to use `conda env export` to get a list of installed packages.
     - How to work with Conda in a project-like setting.
     - How to optimise Conda for speed.
+
+{% endraw %}
