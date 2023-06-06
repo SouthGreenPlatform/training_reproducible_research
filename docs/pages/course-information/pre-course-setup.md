@@ -1,3 +1,4 @@
+{% raw %}
 # Unix environment
 
 ## Setup for Mac / Linux users
@@ -6,11 +7,11 @@ You are lucky, using a UNIX based system as always been ideal for bioinformatics
 Open a bash shell terminal and follow the installation instructions.
 
 First, create and move into a directory on your computer where it makes
-sense to work during the course e.g. `~/training-reproducible-research-area`.
+sense to work during the course e.g. `{{training_path}}`.
 
 ```bash
-mkdir ~/training-reproducible-research-area
-cd ~/training-reproducible-research-area
+mkdir {{training_path}}
+cd {{training_path}}
 ```
 
 ## Setup for Windows users
@@ -43,7 +44,7 @@ resources:
 Open a bash shell Linux terminal and clone the GitHub repository containing all
 files you will need for completing the tutorials as follows. First, create and move into 
 a directory on your computer where it makes sense to work during
-the course e.g. `~/training-reproducible-research-area`.
+the course e.g. `{{training_path}}`.
 
 !!! tip
 
@@ -54,8 +55,8 @@ the course e.g. `~/training-reproducible-research-area`.
     Linux terminal by navigating to `/mnt/c/`.
 
 ```bash
-mkdir ~/training-reproducible-research-area
-cd ~/training-reproducible-research-area
+mkdir {{training_path}}
+cd {{training_path}}
 ```
 
 **Whenever a setup instruction specifies Mac or Linux (*i.e.* only those two,
@@ -203,3 +204,5 @@ Please follow the Windows-specific instructions at the [Singularity website](htt
     Version 6.1.28 of "Virtual box for Windows" may not work, please install
     Version 6.1.26 from [here](https://www.virtualbox.org/wiki/Download_Old_Builds_6_1)
     in case you encounter problems when trying to start the Vagrant VirtualBox.
+
+{% endraw %}

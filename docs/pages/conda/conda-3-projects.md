@@ -10,20 +10,14 @@ environment for a project.
 
 Throughout these tutorials we will use a case study where we analyze an RNA-seq experiment with the multiresistant bacteria MRSA (see intro). You will now start to make a Conda yml file for this MRSA project. The file will contain a list of the software and versions needed to execute the analysis code.
 
-In this Conda tutorial, all code for the analysis is available in the script `~/training-reproducible-research-area/{{config.repo_name}}/code/run_qc.sh`. This code will download the raw FASTQ-files and subsequently run quality control on these using the FastQC software.
+In this Conda tutorial, all code for the analysis is available in the script `run_qc.sh`. This code will download the raw FASTQ-files and subsequently run quality control on these using the FastQC software.
 
 We will start by making a Conda yml-file that contains the required packages to perform these two steps. Later in the course, you will update the Conda yml-file with more packages, as the analysis workflow is expanded.
 
 * First be sure to be located in the tutorial dedicated folder:
 
 ```bash
-cd ~/training-reproducible-research-area/conda_tutorial
-```
-
-* Copy the `run_qc.sh` locally to make your life easier.
-
-```bash
-cp ~/training-reproducible-research-area/{{config.repo_name}}/code/run_qc.sh .
+cd {{training_path}}/conda_tutorial
 ```
 
 * Let's get going! Make a YAML file called `environment.yml` looking like

@@ -3,8 +3,8 @@
     To properly start this training session, you must be within a folder
     where it makes sense to work during the course:  
     ```
-    mkdir ~/training-reproducible-research-area
-    cd ~/training-reproducible-research-area
+    mkdir {{training_path}}
+    cd {{training_path}}
     ```
 
 Let's start by running this command:
@@ -68,7 +68,7 @@ cd ..
 ```
 
 !!! warning
-    From here you must be back to the `~/training-reproducible-research-area` directory  
+    From here you must be back to the `{{training_path}}` directory  
 
 In order to create a new Git repository, we first need a directory to track.
 Let's create one and move inside:
