@@ -88,6 +88,7 @@ extra:
   contact: https://www.southgreen.fr/contact
   institute: SouthGreen
   color_table_header: "#333a99"
+  training_path: "~/training-reproducible-research-area"
 
 # page tree
 nav:
@@ -110,13 +111,14 @@ nav:
           - Extra material: pages/git/git-9-extra-material.md
         - Conda:
           - Introduction: pages/conda/conda-1-introduction.md
-          - Installation: pages/conda/conda-installation.md
+          - Setup: pages/conda/conda-installation.md
           - The basics: pages/conda/conda-2-the-basics.md
           - Projects: pages/conda/conda-3-projects.md
           - Extra material: pages/conda/conda-4-extra-material.md
         - Workflow Manager System:
           - Snakemake:
             - Introduction: pages/snakemake/snakemake-1-introduction.md
+            - Setup: pages/snakemake/snakemake-installation.md
             - The basics: pages/snakemake/snakemake-2-the-basics.md
             - Visualising workflow: pages/snakemake/snakemake-3-visualising-workflows.md
             - The MRSA Workflow: pages/snakemake/snakemake-4-the-mrsa-workflow.md
@@ -129,6 +131,7 @@ nav:
             - Extra material: pages/snakemake/snakemake-11-extra-material.md
           - Nextflow:
             - Introduction: pages/nextflow/nextflow-1-introduction.md
+            - Setup: pages/nextflow/nextflow-installation.md
             - Getting started with nf-core: pages/nextflow/nextflow-nfcore.md
             - The basics: pages/nextflow/nextflow-2-the-basics.md
             - Executing workflows: pages/nextflow/nextflow-3-executing-workflows.md
@@ -136,9 +139,9 @@ nav:
             - Workflow configuration: pages/nextflow/nextflow-5-workflow-configuration.md
             - Optmising the MRSA workflow: pages/nextflow/nextflow-6-optimising-the-mrsa-workflow.md
             - Extra material: pages/nextflow/nextflow-7-extra-material.md
-
         - Containers:
           - Introduction: pages/containers/containers-1-introduction.md
+          - Setup: pages/containers/containers-installation.md
           - The basics: pages/containers/containers-2-the-basics.md
           - Building a Docker image: pages/containers/containers-3-building-images.md
           - Managing containers: pages/containers/containers-4-managing-containers.md
@@ -148,6 +151,7 @@ nav:
           - Extra material: pages/containers/containers-8-extra-material.md
         - R Markdown:
           - Introduction: pages/rmarkdown/r-markdown-1-introduction.md
+          - Setup: pages/rmarkdown/r-markdown-installation.md
           - The basics: pages/rmarkdown/r-markdown-2-the-basics.md
           - Text: pages/rmarkdown/r-markdown-3-text.md
           - Code chunks: pages/rmarkdown/r-markdown-4-code-chunks.md
@@ -157,6 +161,7 @@ nav:
           - Extra materiel: pages/rmarkdown/r-markdown-8-extra-material.md
         - Jupyter:
           - Introduction: pages/jupyter/jupyter-1-introduction.md
+          - Setup: pages/jupyter/jupyter-installation.md
           - The basics: pages/jupyter/jupyter-2-the-basics.md
           - Magics: pages/jupyter/jupyter-3-magics.md
           - Plotting: pages/jupyter/jupyter-4-plotting.md
@@ -167,6 +172,7 @@ nav:
           - Extra material: pages/jupyter/jupyter-9-extra-material.md
         - Quarto:
           - Introduction: pages/quarto/quarto-1-introduction.md
+          - Setup: pages/quarto/quarto-installation.md
           - The basics: pages/quarto/quarto-2-the-basics.md
           - Rendering: pages/quarto/quarto-3-the-rendering.md
           - Extensions: pages/quarto/quarto-4-the-extensions.md

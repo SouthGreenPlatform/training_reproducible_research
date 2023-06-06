@@ -30,9 +30,3 @@ By keeping track of when each file was generated, and by which operation, it is
 possible to ensure that there is a consistent "paper trail" from raw data to
 final results. Snakemake also has features that allow you to package and
 distribute the workflow, and any files it involves, once it's done.
-
-This tutorial depends on files from the course GitHub repo. Take a look at the
-[setup](pre-course-setup) for instructions on how to set it up if you haven't
-done so already, then open up a terminal and go to
-`workshop-reproducible-research/tutorials/snakemake` and activate your
-`snakemake-env` Conda environment.

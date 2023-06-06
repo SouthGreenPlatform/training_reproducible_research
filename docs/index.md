@@ -7,7 +7,7 @@
 
 <img src="https://www.svgrepo.com/show/305241/github.svg"
     width="20" height="20"/>
-    [GitHub repository]( {{repo}})
+    [GitHub repository]( {{config.repo_url}})
 <img src="https://www.svgrepo.com/show/20800/event-date-and-time-symbol.svg"
     width="20" height="20"/>
     14 - 16 Juin, 2023

@@ -34,11 +34,6 @@ cluster environments, such as Uppmax. We will cover both Docker and Singularity
 in this course, but the focus will be be on the former (since that is the most
 widely used and runs on all three operating systems).
 
-This tutorial depends on files from the course GitHub repo. Take a look at the
-[setup](pre-course-setup) for instructions on how to install Docker if you
-haven't done so already, then open up a terminal and go to
-`workshop-reproducible-research/tutorials/containers`.
-
 !!! warning
     Docker images tend to take up quite a lot of space. In order to do all
     the exercises in this tutorial you need to have ~10 GB available.

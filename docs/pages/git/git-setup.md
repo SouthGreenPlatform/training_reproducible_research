@@ -1,3 +1,10 @@
+
+## Install git
+
+This tutorial depends on GIT. Take a look at the
+[setup](../course-information/pre-course-setup.md) for instructions on how to set it up if you haven't
+done so already.
+
 ## Configure git
 
 If it is the first time you use git on your computer, you may want to configure
