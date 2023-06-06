@@ -69,28 +69,28 @@ by running *e.g.* `git --version`. If you don't have git, install it following
 the instructions [here]( https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 If you have a very old version of git you might want to update to a later version.
 
-Git configutation will be done together during the training.
+Git configuration will be done together during the training.
 
 # Conda
 
-Conda installation and configutation will be done together during the training event.
+Conda installation and configuration will be done together during the training event.
 
 
 # Snakemake
 
-Snakemake installation and configutation will be done together during the training event.
+Snakemake installation and configuration will be done together during the training event.
 
 # Nextflow
 
-Nextflow installation and configutation will be done together during the training event.
+Nextflow installation and configuration will be done together during the training event.
 
 # R Markdown
 
-R Markdown installation and configutation will be done together during the training event.
+R Markdown installation and configuration will be done together during the training event.
 
 # Jupyter
 
-Jupyter installation and configutation will be done together during the training event.
+Jupyter installation and configuration will be done together during the training event.
 
 # Docker
 
