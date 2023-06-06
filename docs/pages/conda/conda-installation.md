@@ -1,12 +1,29 @@
-# Installing Conda
+{% raw %}
+# Setup Conda tutorial
 
+## Setup course material 
+
+??? quote "Follow the instructions below only if you start the course at this stage! Otherwise skip this step!"
+        This tutorial depends on files from the course GitHub repo. Please follow these instructions 
+        on how to set it up if you haven't done so already.  
+        Let's create a directory and clone the course GitHub repo.
+        ```bash
+        mkdir -p  {{training_path}}
+        cd {{training_path}}
+        git clone {{config.repo_url}}
+        ```
+
+## Setup environment 
 
 First let's create a dedicated folder for this tutorial:
 
 ```bash
-mkdir -p ~/training-reproducible-research-area/conda_tutorial
-cd ~/training-reproducible-research-area/conda_tutorial
+mkdir -p  {{training_path}}/conda_tutorial
+cd {{training_path}}/conda_tutorial
+cp -r {{training_path}}/{{config.repo_name}}/tutorials/conda/* . 
 ```
+
+## Installing Conda
 
 Conda is installed by downloading and executing an installer from the Conda
 website, but which version you need depends on your operating system. Choose the 
@@ -79,3 +96,5 @@ conda config --add channels bioconda
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
+
+{% endraw %}

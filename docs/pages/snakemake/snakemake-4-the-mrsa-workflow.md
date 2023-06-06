@@ -1,3 +1,4 @@
+{% raw %}
 As you might remember from the [intro](introduction), we are attempting to
 understand how lytic bacteriophages can be used as a future therapy for the
 multiresistant bacteria MRSA (methicillin-resistant _Staphylococcus aureus_).
@@ -9,7 +10,7 @@ workflow to make it more flexible and reproducible!
 !!! Tip
     This section will leave a little more up to you compared to the previous
     one. If you get stuck at some point the final workflow after all the
-    modifications is available in `tutorials/git/Snakefile`.
+    modifications is available in `{{training_path}}/{{config.repo_name}}/tutorials/git/Snakefile`.
 
 You are probably already in your `snakemake-env` environment, otherwise
 activate it (use `conda info --envs` if you are unsure).
@@ -121,3 +122,5 @@ and the count table in `results/tables`.
     - How the MRSA workflow looks.
     - How to run the MRSA workflow.
     - Which output files the MRSA workflow produces.
+
+{% endraw %}

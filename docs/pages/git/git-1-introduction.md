@@ -43,7 +43,3 @@ These tutorials will walk you through the basics of using Git as a tool for
 reproducible research. The things covered in these tutorials are what you will
 be using most of the time in your day-to-day work with Git, but Git has many
 more advanced features that might be of use to you.
-
-This tutorial depends on files from the course GitHub repo. Take a look at the
-[setup](../course-information/pre-course-setup.md) for instructions on how to set it up if you haven't
-done so already.

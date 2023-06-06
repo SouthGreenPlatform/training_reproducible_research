@@ -18,7 +18,7 @@ And like with R markdown, you can click Render button to obtain your output !
 
 ![Demo](../images/quarto_demo.png)
 
-A small novelty: the appearance of the visaul button to have a more user friendly editor.
+A small novelty: the appearance of the visual button to have a more user friendly editor.
 
 ![code](../images/quarto_visual.png)
 
@@ -28,8 +28,7 @@ Want to know more ? You can go [here](https://quarto.org/docs/get-started/hello/
 
 One great thing about quarto is that you don't have to learn anything new! There is nothing new about Jupyter to know. Just how to convert it to HTML or whatever with Quarto. Let's play !
 
-Open up a terminal and go to
-`training-reproducible-research/tutorials/quarto` and run these commands to render Jupyter notebook with quarto: 
+Open up a terminal and run these commands to render Jupyter notebook with quarto: 
 
 ```bash "Terminal"
 quarto render supplementary_material.ipynb --to html
