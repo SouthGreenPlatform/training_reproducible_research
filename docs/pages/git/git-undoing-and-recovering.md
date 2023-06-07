@@ -1,7 +1,10 @@
 One of the main points of version control is that you can go back in time to recover.
 Let's have look at safe commands that do not modify the commit history.
 
-# Undoing uncommitted changes 
+## Undoing uncommitted changes 
+
+### Unstaged file
+
 * Let's edit `config.yml` and remove the line 
 `sample_ids: ["SRR935090","SRR935091","SRR935092"]`. Run `git status`, it will tell you 
 that there are modifications in one file (`config.yml`) compared to the previous commit.
@@ -18,6 +21,8 @@ git restore config.yml
 git status
 ```
 As you can see, Git tells us that this file has not been modified since last commit.
+
+### Staged file
 
 * Let's edit `config.yml`, remove the line 
 `sample_ids: ["SRR935090","SRR935091","SRR935092"]`, stage the file and run `git status`. 
@@ -42,7 +47,7 @@ git status
     In case you want to throws away everything that is not in last commit (HEAD) you can
     use `git reset --hard HEAD`. It is apply on all files, staged and unstaged. 
 
-# Undoing committed changes 
+## Undoing committed changes 
 
 * Let's edit `config.yml`, remove the line 
 `sample_ids: ["SRR935090","SRR935091","SRR935092"]`, stage the file, commit, and run 
