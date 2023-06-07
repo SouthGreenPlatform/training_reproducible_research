@@ -126,16 +126,16 @@ gunzip -c NCTC8325.fa.gz > tempfile
 
 to download and prepare the input for bowtie2.
 
-Now try running the following Bash code:
+Now try running the following Bash code, create an `analysis` directory:
 
 ```bash
-docker run -v $(pwd):/analysis quay.io/biocontainers/bowtie2:2.5.0--py310h8d7afc0_0 bowtie2-build /analysis/tempfile /analysis/NCTC8325
+docker run -v /path/to/dir/analysis:/home quay.io/biocontainers/bowtie2:2.5.0--py310h8d7afc0_0 bowtie2-build /home/tempfile /home/NCTC832
 ```
 
 Docker will automatically download the container image and subsequently run the
-command! Here we're using `-v $(pwd):/analysis` to mount the current directory
+command! Here we're using `-v HOST:PATH_INTO_DOCKER` to mount the current directory
 inside the container in order to make the `tempfile` input available to bowtie2.
-More on these so called "Bind mounts" in Section 4 of this tutorial.
+More on these so-called "Bind mounts" in Section 4 of this tutorial.
 
 !!! Success "Quick recap"
     In this section we've learned:
