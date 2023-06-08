@@ -133,9 +133,9 @@ docker run -v /path/to/dir/analysis:/home quay.io/biocontainers/bowtie2:2.5.0--p
 ```
 
 Docker will automatically download the container image and subsequently run the
-command! Here we're using `-v HOST:PATH_INTO_DOCKER` to mount the current directory
+command! Here we're using `-v HOST:PATH_INTO_DOCKER` to mount the required directory
 inside the container in order to make the `tempfile` input available to bowtie2.
-More on these so-called "Bind mounts" in Section 4 of this tutorial.
+More on these so-called "Bind mounts" in Section [bind mount](https://southgreenplatform.github.io/training_reproducible_research/pages/containers/containers-4-managing-containers/#bind-mounts) of this tutorial.
 
 !!! Success "Quick recap"
     In this section we've learned:
