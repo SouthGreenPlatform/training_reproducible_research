@@ -117,6 +117,7 @@ nav:
           - Projects: pages/conda/conda-3-projects.md
           - Extra material: pages/conda/conda-4-extra-material.md
         - Workflow Manager System:
+          - Introduction: pages/wms.md
           - Snakemake:
             - Introduction: pages/snakemake/snakemake-1-introduction.md
             - Setup: pages/snakemake/snakemake-installation.md
