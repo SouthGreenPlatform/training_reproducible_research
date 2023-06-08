@@ -66,7 +66,7 @@ with no alternative for Windows), please follow the Linux instructions.**
 # Git
 
 Chances are that you already have git installed on your computer. You can check
-by running *e.g.* `git --version`. If you don't have git, install it following
+by running *e.g.* `git --version` in your terminal. If you don't have git, install it following
 the instructions [here]( https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 If you have a very old version of git you might want to update to a later version.
 
