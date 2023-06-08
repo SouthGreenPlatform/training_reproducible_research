@@ -18,8 +18,8 @@
 First let's create a dedicated folder for this tutorial:
 
 ```bash
-mkdir -p  {{training_path}}/conda_tutorial
-cd {{training_path}}/conda_tutorial
+mkdir -p  {{training_path}}/conda
+cd {{training_path}}/conda
 cp -r {{training_path}}/{{config.repo_name}}/tutorials/conda/* . 
 ```
 
