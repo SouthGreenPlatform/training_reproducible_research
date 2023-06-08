@@ -32,3 +32,6 @@ snakemake/*tsv
 
 #compiled site
 site
+
+# tmp pptx file
+~*.pptx

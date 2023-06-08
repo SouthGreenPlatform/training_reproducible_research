@@ -17,7 +17,7 @@ We will start by making a Conda yml-file that contains the required packages to 
 * First be sure to be located in the tutorial dedicated folder:
 
 ```bash
-cd {{training_path}}/conda_tutorial
+cd {{training_path}}/conda
 ```
 
 * Let's get going! Make a YAML file called `environment.yml` looking like

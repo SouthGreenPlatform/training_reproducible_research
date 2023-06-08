@@ -25,39 +25,6 @@ class: center, middle
 
 ---
 
-# Why do we need workflow managers?
---
-<br>
-.pull-left[
-<img src="https://images.unsplash.com/photo-1549319114-d67887c51aed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80" width="90%">
-]
-.pull-right[
-*As projects grow or age, it becomes increasingly difficult to keep track of all the parts and how they fit together.*
-]
-
----
-
-# Workflow managers
-
-.pull-left[.center[
-<img src="http://ccl.cse.nd.edu/software/makeflow/MakeflowLogoSmall.png", width=75%>
-<br>
-<br>
-<br>
-<img src="https://nextflow-io.github.io/nf-hack18/assets/nextflow_logo.png", width=75%>
-]]
-
-.pull-right[.center[
-<img src="https://img3.doubanio.com/lpic/s11150183.jpg", width=50%>
-<br>
-GNU Make
-
-<br>
-<img src="https://snakemake.github.io/img/jk/logo.png" style="background-color:#002221;width:75%;padding: 15px 15px 15px 15px;">
-]]
-
----
-
 # Snakemake workflows
 
 --

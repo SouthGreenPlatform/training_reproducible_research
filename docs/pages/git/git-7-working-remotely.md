@@ -133,6 +133,9 @@ rendering any *markdown* document named `README` or `README.md` in the
 repository's root directory and displaying it along with what you can already
 see. Let's try it out!
 
+!!! info
+    You can find nice README Template on [recherche.data.gouv.fr](https://recherche.data.gouv.fr/fr/categorie/33/guide/modele-de-readme) web site.
+
 * Let's create a `README.md` file and fill it with the following text:
 
 ```markdown

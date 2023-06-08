@@ -103,6 +103,7 @@ nav:
           - Setup: pages/git/git-setup.md
           - Creating a git repository: pages/git/git-2-creating-repositories.md
           - Committing changes: pages/git/git-3-committing-changes.md
+          - Undoing and recovering: pages/git/git-undoing-and-recovering.md
           - Ignoring files: pages/git/git-4-ignoring-files.md
           - Branching and merging: pages/git/git-5-branches.md
           - Tagging commits: pages/git/git-6-tags.md
@@ -116,6 +117,7 @@ nav:
           - Projects: pages/conda/conda-3-projects.md
           - Extra material: pages/conda/conda-4-extra-material.md
         - Workflow Manager System:
+          - Introduction: pages/wms.md
           - Snakemake:
             - Introduction: pages/snakemake/snakemake-1-introduction.md
             - Setup: pages/snakemake/snakemake-installation.md
