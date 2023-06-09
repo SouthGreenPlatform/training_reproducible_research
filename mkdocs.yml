@@ -182,8 +182,10 @@ nav:
         - 'Making a project reproducible': 'pages/project/project.md'
         - 'Take down': 'pages/take_down/take_down.md'
     - Cheat sheet:
-        - Bash Cheat sheet: pages/cheat_sheet/bash/bash.md
-        - Git cheat-sheet official: pages/cheat_sheet/git/git_official.md
-        - Conda Cheat sheet: pages/cheat_sheet/conda/conda.md
-        - Notebook Cheat sheet: pages/cheat_sheet/notebook/notebook.md
+        - Bash cheat sheet: pages/cheat_sheet/bash/bash.md
+        - Git Cheat sheet: pages/cheat_sheet/git/git.md
+        - Git cheat sheet official: pages/cheat_sheet/git/git_official.md
+        - Conda cheat sheet: pages/cheat_sheet/conda/conda.md
+        - Notebook cheat sheet: pages/cheat_sheet/notebook/notebook.md
+        - Docker cheat sheet: https://dockerlabs.collabnix.com/docker/cheatsheet/
         - Interesting ressources: pages/cheat_sheet/interesting_ressources.md
