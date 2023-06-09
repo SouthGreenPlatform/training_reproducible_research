@@ -28,7 +28,6 @@ We will use Conda environments for the set up of this tutorial. So, now we will 
 
 ```bash
 conda env create -f {{training_path}}/{{config.repo_name}}/tutorials/rmarkdown/environment.yml -n rmarkdown-env
-conda activate rmarkdown-env
 ```
 
 You can then activate the environment followed by running RStudio in the background from the command lines:
