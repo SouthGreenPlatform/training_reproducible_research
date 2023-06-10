@@ -60,9 +60,9 @@ table_rot {
 }
 
 /* SciLifeLab logo in bottom left corner  */
-div.scilife-logo {
+div.southgreen-logo {
     content: "";
-    background-image: url("https://www.scilifelab.se/wp-content/uploads/2020/09/SciLifeLab_Logotype_Green_POS_large-copy-1536x334.png");
+    background-image: url("https://www.southgreen.fr/sites/southgreen.fr/themes/southgreen/logo.png");
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -72,10 +72,10 @@ div.scilife-logo {
     width: 200px;
 }
 
-/* NBIS logo in bottom right corner  */
-div.nbis-logo {
+/*  logo in bottom right corner
+div.xxx-logo {
     content: "";
-    background-image: url("https://nbis.se/assets/img/logos/nbislogo-green.svg");
+    background-image: url("https://xxx.svg");
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -84,6 +84,7 @@ div.nbis-logo {
     height: 35px;
     width: 100px;
 }
+*/
 
 /* Blockquotes */
 blockquote {
