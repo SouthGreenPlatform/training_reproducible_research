@@ -180,6 +180,7 @@ nav:
           - Extensions: pages/quarto/quarto-4-the-extensions.md
           - The MRSA case study: pages/quarto/quarto-5-the-mrsa-case-study.md
           - Extra material: pages/quarto/quarto-6-extra-material.md
+          - Comparison: pages/quarto/quarto-7-comparison.md
         - 'Making a project reproducible': 'pages/project/project.md'
         - 'Take down': 'pages/take_down/take_down.md'
     - Cheat sheet:

@@ -39,11 +39,24 @@ conda activate quarto-env
 ## Rstudio with quarto 
 
 !!! warning 
-        Quarto is still in its infancy on conda and has some conflicts with certain R packages on conda. What's more, the Rstudio package on conda is not the latest version. We advise you to do the following installation in parallel. For reproducibility, you can also use a docker as suggested here: https://rocker-project.org/
+        Quarto is still in its infancy on conda and has some conflicts with certain R packages on conda. What's more, the Rstudio package on conda is not the latest version (does not integrate quarto natively). If you wish to use the graphical interface to generate Quarto files, we recommend the following installations
 
-1. Install Rstudio : https://posit.co/download/rstudio-desktop/
-2. Install quarto : https://quarto.org/docs/get-started/
+### Docker installation (Reproductible)
+
+The documentation is available [here](https://rocker-project.org/images/versioned/rstudio.html) from the Rocker project.
+
+```bash 
+docker run --rm -ti -p 8787:8787 rocker/rstudio
+```
+
+### Classic installation
+
+1. Install Rstudio : [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)
+2. Install quarto : [https://quarto.org/docs/get-started/](https://quarto.org/docs/get-started/)
+
 
 Et voilà !
 
 {% endraw %}
+
+conda env update -f environment.yml -n quartp-env
