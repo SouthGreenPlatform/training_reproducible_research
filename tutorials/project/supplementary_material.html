@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.340">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Supplementary Material</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="supplementary_material_files/libs/clipboard/clipboard.min.js"></script>
+<script src="supplementary_material_files/libs/quarto-html/quarto.js"></script>
+<script src="supplementary_material_files/libs/quarto-html/popper.min.js"></script>
+<script src="supplementary_material_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="supplementary_material_files/libs/quarto-html/anchor.min.js"></script>
+<link href="supplementary_material_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="supplementary_material_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="supplementary_material_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="supplementary_material_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="supplementary_material_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Supplementary Material</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="supplementary-methods" class="level1">
+<h1>Supplementary Methods</h1>
+<p>Here you might include a description of the methods used in obtaining and analysing the data before getting into this document, <em>e.g.</em> how sequencing data was aligned and counted.</p>
+</section>
+<section id="supplementary-tables-and-figures" class="level1">
+<h1>Supplementary Tables and Figures</h1>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>        SRR geo_accession                  source_name_ch1
+1 SRR935090    GSM1186459     Staphylococcus aureus RN4220
+2 SRR935091    GSM1186460     Staphylococcus aureus RN4220
+3 SRR935092    GSM1186461 Staphylococcus aureus NCTC8325-4
+  characteristics_ch1.1
+1           empty pRMC2
+2      pRMC2 with ORF67
+3               control</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>        SRR Percent duplicates Percent GC Avg sequence length Percent fails
+1 SRR935090             22.992         38                  51      9.090909
+2 SRR935091             37.764         39                  51      9.090909
+3 SRR935092              9.308         36                  51      9.090909
+  Total sequences
+1           25000
+2           25000
+3           25000</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="supplementary_material_files/figure-html/Counts%20barplot-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="supplementary_material_files/figure-html/Gene%20heatmap-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<section id="reproducibility" class="level2">
+<h2 class="anchored" data-anchor-id="reproducibility">Reproducibility</h2>
+<p>The code for reproducing this analysis is available in this <a href="https://github.com/NBISweden/workshop-reproducible-research/tree/master/docker">GitHub repo</a>. The repo contains:</p>
+<ul>
+<li>A Snakemake workflow for running all analysis steps</li>
+<li>A Conda environment file for installing all needed dependenciesx</li>
+<li>A Docker file for running the analysis in a well-defined and isolated system</li>
+</ul>
+<p>The results in this supplementary were generated in the following R environment:</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>R version 4.2.1 (2022-06-23)
+Platform: x86_64-apple-darwin13.4.0 (64-bit)
+Running under: macOS Big Sur ... 10.16
+
+Matrix products: default
+BLAS/LAPACK: /Users/thomasdenecker/opt/anaconda3/envs/quarto-env/lib/libopenblasp-r0.3.23.dylib
+
+locale:
+[1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+
+attached base packages:
+[1] stats4    stats     graphics  grDevices utils     datasets  methods  
+[8] base     
+
+other attached packages:
+ [1] GEOquery_2.66.0      Biobase_2.58.0       rtracklayer_1.58.0  
+ [4] GenomicRanges_1.50.0 GenomeInfoDb_1.34.9  IRanges_2.32.0      
+ [7] S4Vectors_0.36.0     BiocGenerics_0.44.0  pheatmap_1.0.12     
+[10] reshape2_1.4.4       ggplot2_3.3.6       
+
+loaded via a namespace (and not attached):
+ [1] MatrixGenerics_1.10.0       tidyr_1.2.1                
+ [3] jsonlite_1.8.5              R.utils_2.11.0             
+ [5] GenomeInfoDbData_1.2.9      Rsamtools_2.14.0           
+ [7] yaml_2.3.7                  pillar_1.9.0               
+ [9] lattice_0.21-8              glue_1.6.2                 
+[11] limma_3.54.0                digest_0.6.31              
+[13] RColorBrewer_1.1-3          XVector_0.38.0             
+[15] colorspace_2.1-0            htmltools_0.5.5            
+[17] Matrix_1.5-4.1              R.oo_1.24.0                
+[19] plyr_1.8.8                  XML_3.99-0.14              
+[21] pkgconfig_2.0.3             zlibbioc_1.44.0            
+[23] purrr_0.3.5                 scales_1.2.0               
+[25] tzdb_0.4.0                  BiocParallel_1.32.5        
+[27] tibble_3.2.1                farver_2.1.1               
+[29] generics_0.1.2              ellipsis_0.3.2             
+[31] withr_2.5.0                 SummarizedExperiment_1.28.0
+[33] cli_3.6.1                   magrittr_2.0.3             
+[35] crayon_1.5.1                evaluate_0.15              
+[37] R.methodsS3_1.8.1           fansi_1.0.4                
+[39] xml2_1.3.3                  tools_4.2.1                
+[41] data.table_1.14.8           hms_1.1.1                  
+[43] BiocIO_1.8.0                lifecycle_1.0.3            
+[45] matrixStats_1.0.0           stringr_1.4.0              
+[47] munsell_0.5.0               DelayedArray_0.24.0        
+[49] Biostrings_2.66.0           compiler_4.2.1             
+[51] rlang_1.1.1                 grid_4.2.1                 
+[53] RCurl_1.98-1.9              rjson_0.2.21               
+[55] htmlwidgets_1.5.4           labeling_0.4.2             
+[57] bitops_1.0-7                rmarkdown_2.14             
+[59] restfulr_0.0.15             gtable_0.3.0               
+[61] codetools_0.2-18            curl_4.3.3                 
+[63] R6_2.5.1                    GenomicAlignments_1.34.0   
+[65] knitr_1.39                  dplyr_1.1.2                
+[67] fastmap_1.1.1               utf8_1.2.3                 
+[69] readr_2.1.4                 stringi_1.7.12             
+[71] parallel_4.2.1              Rcpp_1.0.10                
+[73] vctrs_0.6.2                 tidyselect_1.2.0           
+[75] xfun_0.39                  </code></pre>
+</div>
+</div>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

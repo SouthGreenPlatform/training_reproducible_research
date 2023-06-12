@@ -181,11 +181,16 @@ nav:
           - The MRSA case study: pages/quarto/quarto-5-the-mrsa-case-study.md
           - Extra material: pages/quarto/quarto-6-extra-material.md
           - Comparison: pages/quarto/quarto-7-comparison.md
-        - 'Making a project reproducible': 'pages/project/project.md'
+          - Extra material: pages/quarto/quarto-5-extra-material.md
+        - 'Making a project reproducible': 
+          - Review: pages/project/project-1-review.md
+          - Good praticies: pages/project/project-2-good_praticies.md 
+          - And now ?: pages/project/project-3-and_now.md 
         - 'Take down': 'pages/take_down/take_down.md'
     - Cheat sheet:
-        - Bash Cheat sheet: pages/cheat_sheet/bash/bash.md
-        - Git cheat-sheet official: pages/cheat_sheet/git/git_official.md
-        - Conda Cheat sheet: pages/cheat_sheet/conda/conda.md
-        - Notebook Cheat sheet: pages/cheat_sheet/notebook/notebook.md
-        - Interesting ressources: pages/cheat_sheet/interesting_ressources.md
+        - Bash : pages/cheat_sheet/bash/bash.md
+        - Git : pages/cheat_sheet/git/git.md
+        - Git official: pages/cheat_sheet/git/git_official.md
+        - Conda: pages/cheat_sheet/conda/conda.md
+        - Notebook: pages/cheat_sheet/notebook/notebook.md
+        - Docker: https://dockerlabs.collabnix.com/docker/cheatsheet/

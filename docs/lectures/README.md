@@ -29,7 +29,7 @@ Lectures in **Rmarkdown** format can be rendered using the following from
 the command line:
 
 ```bash
-Rscript -e 'library(webshot); webshot("<Rmd-file>", "<pdf-file-output>")'
+Rscript -e 'library(webshot); webshot("<html-file>", "<pdf-file-output>")'
 ```
 
 Lectures in **Jupyter notebook** format can be rendered using:
