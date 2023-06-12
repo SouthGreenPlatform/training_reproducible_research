@@ -28,13 +28,19 @@ We will use Conda environments for the set up of this tutorial. So, now we will 
 
 ```bash
 conda env create -f {{training_path}}/{{config.repo_name}}/tutorials/rmarkdown/environment.yml -n rmarkdown-env
+```
+
+You can then activate the environment followed by running RStudio in the background from the command lines:
+
+```bash
 conda activate rmarkdown-env
 ```
 
-You can then activate the environment followed by running RStudio in the background from the command line:
+and after :
 
-conda activate rmarkdown-env
+```bash
 rstudio &
+```
 
 !!! tip "The sluggishness of Conda"
         Some environments are inherently quite complicated in that they have many and varied dependencies, meaning that the search space for the entire dependency hierarchy becomes huge - leading to slow and sluggish installations. This is often the case for R environments. This can be improved by using Mamba, a faster wrapper around Conda. Simply run conda install -n base mamba to install Mamba in your base environment, and replace any conda command with mamba - except activating and deactivating environments, which still needs to be done using Conda.

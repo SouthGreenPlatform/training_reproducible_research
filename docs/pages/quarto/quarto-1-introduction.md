@@ -40,6 +40,6 @@ Quarto CLI orchestrates each step of rendering
 </figure>
 
 This tutorial depends on files from the course GitHub repo. Take a look at the
-[setup](pre-course-setup) for instructions on how to set it up if you haven't
+[setup](../course-information/pre-course-setup.md) for instructions on how to set it up if you haven't
 done so already. As a reminder, go [here](https://quarto.org/docs/get-started/) 
 and download the last version of Quarto.

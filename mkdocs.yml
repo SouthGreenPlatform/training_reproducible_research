@@ -178,6 +178,9 @@ nav:
           - The basics: pages/quarto/quarto-2-the-basics.md
           - Rendering: pages/quarto/quarto-3-the-rendering.md
           - Extensions: pages/quarto/quarto-4-the-extensions.md
+          - The MRSA case study: pages/quarto/quarto-5-the-mrsa-case-study.md
+          - Extra material: pages/quarto/quarto-6-extra-material.md
+          - Comparison: pages/quarto/quarto-7-comparison.md
           - Extra material: pages/quarto/quarto-5-extra-material.md
         - 'Making a project reproducible': 
           - Review: pages/project/project-1-review.md

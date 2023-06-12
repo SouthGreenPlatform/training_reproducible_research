@@ -37,7 +37,7 @@ This notebook concept has evolved since then and in this session we will present
 The Jupyter Notebook is an open-source web application that allows you to
 create and share documents that contain code, equations, visualizations and
 text. The functionality is partly overlapping with R Markdown (see the
-[tutorial](r-markdown-1-introduction)), in that they both use markdown and code
+[tutorial](../../rmarkdown/r-markdown-1-introduction)), in that they both use markdown and code
 chunks to generate reports that integrate results of computations with the code
 that generated them. Jupyter Notebook comes from the Python community while
 R Markdown was developed by RStudio, but you could use most common programming
@@ -64,7 +64,7 @@ As always, the best way is to try it out yourself and decide what to use it
 for!
 
 This tutorial depends on files from the course GitHub repo. Take a look at the
-[setup](pre-course-setup) for instructions on how to set it up if you haven't
+[setup](../../course-information/pre-course-setup/) for instructions on how to set it up if you haven't
 done so already. Then open up a terminal and go to
 `training_reproducible_research/tutorials/jupyter` and activate your
 `jupyter-env` Conda environment.

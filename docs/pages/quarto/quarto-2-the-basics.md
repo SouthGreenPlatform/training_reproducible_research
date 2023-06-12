@@ -2,8 +2,8 @@
 
 In this part, we will use Rstudio and create from scratch a new quarto document.
 
-''' warning
-  It is necessary to have a recent version of the RStudio IDE (>=v2022.07).
+!!! warning
+    It is necessary to have a recent version of the RStudio IDE (>=v2022.07).
 
 Let's begin with starting RStudio and opening a new file (`File` --> `New File` --> `Quarto document`).
 
@@ -14,7 +14,6 @@ You get this :
 But it's like R mardown?! Yes exactly, since one of the objectives of quarto is to replace R markdown !
 
 And like with R markdown, you can click Render button to obtain your output !
-
 
 ![Demo](../images/quarto_demo.png)
 
@@ -30,7 +29,7 @@ One great thing about quarto is that you don't have to learn anything new! There
 
 Open up a terminal and run these commands to render Jupyter notebook with quarto: 
 
-```bash "Terminal"
+```bash
 quarto render supplementary_material.ipynb --to html
 quarto render supplementary_material.ipynb --to docx
 ```
