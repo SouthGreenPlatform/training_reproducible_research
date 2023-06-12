@@ -179,7 +179,10 @@ nav:
           - Rendering: pages/quarto/quarto-3-the-rendering.md
           - Extensions: pages/quarto/quarto-4-the-extensions.md
           - Extra material: pages/quarto/quarto-5-extra-material.md
-        - 'Making a project reproducible': 'pages/project/project.md'
+        - 'Making a project reproducible': 
+          - Review: pages/project/project-1-review.md
+          - Good praticies: pages/project/project-2-good_praticies.md 
+          - And now ?: pages/project/project-3-and_now.md 
         - 'Take down': 'pages/take_down/take_down.md'
     - Cheat sheet:
         - Bash : pages/cheat_sheet/bash/bash.md
