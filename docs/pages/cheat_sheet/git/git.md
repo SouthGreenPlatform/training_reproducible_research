@@ -23,7 +23,7 @@ Most of the documention find here is inspired or copied from the excellent resso
 | --- | --- |
 | git revert f960dd3 | This creates a new commit that does the opposite of the reverted commit. The old commit remains in the history |
 | git commit --amend | Amend to the last commit. This can also be used to modify the last commit message. Note that this will change the commit hash. This command modifies the history. This means that we never use this command on commits that we have shared with others. |
-| git checkout \<filename\> | Undo unstaged/uncommitted changes. |
+| git checkout <filename\> | Undo unstaged/uncommitted changes. |
 
 ### The staging area
 
@@ -36,7 +36,7 @@ The staging area helps us to create well-defined commits.
 | git diff    | show unstaged/uncommitted modifications
 | git diff --staged |   see **staged** changes
 | git reset   | unstages staged changes
-| git checkout \<path\>  | check out the latest staged version ( or committed version if file has not been staged )
+| git checkout <path\>  | check out the latest staged version ( or committed version if file has not been staged )
 | git add -u | stage all modification
 
 
@@ -51,17 +51,17 @@ git config --global alias.graph "log --all --graph --decorate --oneline" | the c
 | Command | Comment
 | --- | --- 
 | git branch               | see where we are
-| git branch \<name\>        | create branch \<name\>
-| git checkout \<name\>      | switch to branch \<name\>
-| git merge \<name\>         | merge branch \<name\> (to current branch)
-| git branch -d \<name\>     | delete branch \<name\>
-| git branch -D \<name\>     | delete unmerged branch
-| git checkout -b \<name\>   | create branch \<name\> and switch to it
-| git reset --hard \<branch/hash\>  | rewind current branch to \<branch/hash\> and throw away all later code changes
-| git reset --soft \<branch/hash\>  | rewind current branch to \<branch/hash\> but keep all later code changes and stage them
-| git rebase \<branch/hash\>        | cut current branch off and transplant it on top of \<branch/hash\>
+| git branch <name\>        | create branch <name\>
+| git checkout <name\>      | switch to branch <name\>
+| git merge <name\>         | merge branch <name\> (to current branch)
+| git branch -d <name\>     | delete branch <name\>
+| git branch -D <name\>     | delete unmerged branch
+| git checkout -b <name\>   | create branch <name\> and switch to it
+| git reset --hard <branch/hash\>  | rewind current branch to <branch/hash\> and throw away all later code changes
+| git reset --soft <branch/hash\>  | rewind current branch to <branch/hash\> but keep all later code changes and stage them
+| git rebase <branch/hash\>        | cut current branch off and transplant it on top of <branch/hash\>
 | git reflog                      | show me a log of past hashes I have visited
-| git checkout -b \<branch/hash\>   | create a branch pointing to <bran
+| git checkout -b <branch/hash\>   | create a branch pointing to <bran
 
   * Typical workflows
 	
@@ -94,9 +94,9 @@ No problem: we worked on a branch, branch is deleted, master is clean.
 | Command | Comment
 | --- | --- 
 | git **tag** -a v1.0 -m "message" |  To record particular states or milestones of a project at a given point in time, like for instance versions.
-| git push origin \<tagname\> | To push a tag to remote servers.
-| git push --delete origin \<tagname\> | To delete the remote tag.
-| git tag --delete \<tagname\> | To delete the local tag.
+| git push origin <tagname\> | To push a tag to remote servers.
+| git push --delete origin <tagname\> | To delete the remote tag.
+| git tag --delete <tagname\> | To delete the local tag.
 
 ### Conflict resolution
 
@@ -152,14 +152,14 @@ You are in a middle of a development and a colleague wants to fix/commit somethi
 
 | Command | Comment
 | --- | --- |
-| git diff HEAD^^ HEAD \<filename\> | to see the difference for a file \<filename\> between now and two commits back
-| git diff 61a86561a1edb438963f5f22ec9e0773a0c4aacf HEAD \<filename\> | to see the difference for a file \<filename\> between now and a specific commit
+| git diff HEAD^^ HEAD <filename\> | to see the difference for a file <filename\> between now and two commits back
+| git diff 61a86561a1edb438963f5f22ec9e0773a0c4aacf HEAD <filename\> | to see the difference for a file <filename\> between now and a specific commit
 | git show e83c51633 | Inspecting commit e83c51633
 | git grep -i __term__ | Greps entire repository below current directory
-| git blame \<filename\> | Show what revision and author last modified each line of a file.
+| git blame <filename\> | Show what revision and author last modified each line of a file.
 | git log --oneline --grep "__term__" | grepping commit messages
-| git log -S '__term__' \<filename\> | Finding removed code (__term__) from file \<filename\>
-| git checkout -b \<name\> \<hash\> | Branch from arbitrary (earlier) hash. Recommended mechanism to inspect old code. remove the | branch once you found what you were looking for.
+| git log -S '__term__' <filename\> | Finding removed code (__term__) from file <filename\>
+| git checkout -b <name\> <hash\> | Branch from arbitrary (earlier) hash. Recommended mechanism to inspect old code. remove the | branch once you found what you were looking for.
 | git shortlog --summary --numbered | To show all users and the number of commits
 
 
@@ -197,7 +197,7 @@ Let’s say you are working in an project where you are making changes in a bran
 | git cherry-pick __commit-hash1__ __commit-hash2__ | cherry pick several commits
 | git cherry-pick --continue | When the cherry picking stoped by a conflicts and you have resolved it, then launch this command
 | git cherry-pick --abort | Cancel the operation and return to the pre-sequence state
-| git cherry-pick -m 1 \<hash\> | herry pick a merge instead of a commit
+| git cherry-pick -m 1 <hash\> | herry pick a merge instead of a commit
 
 **/!\\** Cherry picking is commonly discouraged in developer community. The main reason is because it creates a duplicate commit with the same changes and you lose the ability to track the history of the original commit. If you can merge, then you should use that instead of cherry picking. Use it with caution!
 
