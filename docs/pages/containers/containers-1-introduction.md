@@ -1,4 +1,8 @@
-<iframe id="iframepdf" src="../../../lectures/containers/containers.pdf" frameborder="0" width="640" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe id="iframepdf" src="../../../lectures/containers/containers-support.pdf" frameborder="0" width="640" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+ 
+<!---
+https://docs.google.com/presentation/d/1gWNiLsDgE8g85QieaXy2nDjWfLI-oIFOp3bpGOlQgNs/edit#slide=id.g250c60d4a41_0_5
+--->
 
 Container-based technologies are designed to make it easier to create, deploy,
 and run applications by isolating them in self-contained software units (hence
