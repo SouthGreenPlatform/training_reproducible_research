@@ -1,0 +1,21 @@
+name: quarto-env
+channels:
+  - r
+  - conda-forge
+  - bioconda
+  - main
+dependencies:
+  - r-quarto=1.2
+  - r-devtools=2.4.3
+  - r-ggplot2=3.3.6
+  - r-networkd3=0.4
+  - r-pheatmap=1.0.12
+  - r-reshape2=1.4.4 
+  - r-pillar=1.9.0
+  - r-vctrs=0.6.2
+  - bioconductor-rtracklayer=1.58.0
+  - bioconductor-geoquery=2.66.0
+  - r-tidyselect=1.2.0
+  - r-rmarkdown
+  - r-stringi
+  - r-base

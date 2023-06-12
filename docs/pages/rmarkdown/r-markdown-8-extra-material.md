@@ -210,3 +210,7 @@ of the presentations you have given in the past (such as for a lab meeting, a
 journal club, *etc.*) and try to recreate that with R Markdown. Which method of
 creating presentations you prefer is, ultimately, up to you and what the your
 current end-goal is for the presentation.
+
+## And much, much more !
+
+Rmarkdown is available in many other output formats such as book format, website, ... You'll find them all [here](https://rmarkdown.rstudio.com/lesson-9.html) with examples.

@@ -52,7 +52,11 @@ Try this out if you know any of the languages above. Otherwise you can always
 try to print the quadratic formula with LaTeX!
 
 ```LaTeX
-{{ "\\begin{array}{*{20}c} {x = \\frac{{ - b \\pm \\sqrt {b^2 - 4ac} }}{{2a}}} & {{\\rm{when}}} & {ax^2 + bx + c = 0} \\\\ \\end{array}" }} 
+\begin{align}
+(a+b)^3 &= (a+b)(a+b)^2 \\
+        &= (a+b)(a^2+2ab+b^2) \\
+        &= a^3+3a^2b+3ab^2+b^3
+\end{align}
 ```
 
 Another useful magic is `%precision` which sets the floating point precision
