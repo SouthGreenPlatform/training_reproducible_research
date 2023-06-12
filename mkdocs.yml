@@ -187,6 +187,7 @@ nav:
           - Good praticies: pages/project/project-2-good_praticies.md 
           - And now ?: pages/project/project-3-and_now.md 
         - 'Take down': 'pages/take_down/take_down.md'
+        - 'Final word': 'pages/final_word.md'
     - Cheat sheet:
         - Bash: pages/cheat_sheet/bash/bash.md
         - Git: pages/cheat_sheet/git/git.md
