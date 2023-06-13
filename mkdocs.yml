@@ -152,6 +152,9 @@ nav:
           - Packaging the case study: pages/containers/containers-6-packaging-the-case-study.md
           - Singularity: pages/containers/containers-7-singularity.md
           - Extra material: pages/containers/containers-8-extra-material.md
+        - Notebook: 
+          - Context: pages/notebook/notebook-context.md
+          - Markdown: pages/notebook/notebook-markdown.md
         - R Markdown:
           - Introduction: pages/rmarkdown/r-markdown-1-introduction.md
           - Setup: pages/rmarkdown/r-markdown-installation.md
@@ -180,13 +183,13 @@ nav:
           - Rendering: pages/quarto/quarto-3-the-rendering.md
           - Extensions: pages/quarto/quarto-4-the-extensions.md
           - The MRSA case study: pages/quarto/quarto-5-the-mrsa-case-study.md
-          - Extra material: pages/quarto/quarto-6-extra-material.md
-          - Comparison: pages/quarto/quarto-7-comparison.md
-          - Extra material: pages/quarto/quarto-5-extra-material.md
+          - Comparison: pages/quarto/quarto-6-comparison.md
+          - Extra material: pages/quarto/quarto-7-extra-material.md
         - 'Making a project reproducible': 
           - Review: pages/project/project-1-review.md
           - Good praticies: pages/project/project-2-good_praticies.md 
           - And now ?: pages/project/project-3-and_now.md 
+          - To end on a high note !: pages/project/project-4-demo.md 
         - 'Take down': 'pages/take_down/take_down.md'
         - 'Final word': 'pages/final_word.md'
     - Cheat sheet:

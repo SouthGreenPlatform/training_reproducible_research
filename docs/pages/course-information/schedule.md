@@ -169,7 +169,7 @@
         </td>
     </tr>
     <tr>
-        <td style="padding:5px"> <font size="3"> 14:30 </td>
+        <td style="padding:5px"> <font size="3"> 14:15 </td>
         <td style="padding:5px"> <font size="3"> Computational notebooks and reproducible reports
             <font size="2"><i><br>
             - Introduction to Quarto <br>
@@ -182,14 +182,10 @@
     </tr>
     <tr>
         <td style="padding:5px"> <font size="3"> 15:15 </td>
-        <td style="padding:5px"> <font size="3"> ... continued: Quarto </td>
-    </tr>
-    <tr>
-        <td style="padding:5px"> <font size="3"> 16:15 </td>
         <td style="padding:5px"> <font size="3"> Wrap-up - Computational notebooks and reproducible reports </td>
     </tr>
     <tr>
-        <td style="padding:5px"> <font size="3"> 16:30 </td>
+        <td style="padding:5px"> <font size="3"> 15:30 </td>
         <td style="padding:5px"> <font size="3"> Putting the pieces together
             <font size="2"> <i> <br>
             - How to put all the tools and procedures together <br>
@@ -197,7 +193,7 @@
         </td>
     </tr>
     <tr>
-        <td style="padding:5px"> <font size="3"> 17:30 </td>
+        <td style="padding:5px"> <font size="3"> 16:30 </td>
         <td style="padding:5px"> <font size="3"> End of the course! </td>
     </tr>
 </table>

@@ -1,3 +1,9 @@
+
+
+<figure markdown>
+ ![quarto-logo](../images/quarto.png)
+</figure>
+
 Another notebook? But why? We have already seen R markdown and Jupyter. That's true, but Quarto is the new kid on the block and it's already getting a lot of attention!
 
 <figure markdown>

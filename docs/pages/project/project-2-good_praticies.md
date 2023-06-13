@@ -37,6 +37,34 @@ project
 |- Dockerfile          recipe to create a project container
 ```
 
+An other proposition: 
+
+<figure markdown>
+  ![Folder architecture](../images/project-organisation.png){ width="100%" }
+  <figcaption>Data management tips by Kira Höffler (<a href='https://du-bii.github.io/module-5-Methodes-Outils/seance3_goodpractices/images/Infographic_Data_Management_v02-02_KH.pdf'>source</a>)</figcaption>
+</figure>
+
+## Files: naming and format
+
+### Naming
+
+- Brief and to the point
+- No spaces or special characters
+- With the right date format
+- With the most important element first
+- With the document version
+
+<figure markdown>
+  ![Folder architecture](../images/project-date.png){ width="100%" }
+  <figcaption>Date format (<a href='https://xkcd.com/1179/'>source</a>)</figcaption>
+</figure>
+
+### Format
+
+- Non-proprietary if possible
+- Formats that lose the least data on conversion
+- The format used by the community
+
 ## Write a good READ ME
 
 An other example from Recheche data gouv ([source](https://recherche.data.gouv.fr/fr/categorie/33/guide/modele-de-readme))
@@ -121,7 +149,7 @@ You must keep your input data read-only - consider it static. Don't create diffe
 
 <figure markdown>
   ![](../images/3-2-1-Backup-Rule.png)
-  <figcaption><a href='https://www.msp360.com/resources/blog/following-3-2-1-backup-strategy/'>source</a></figcaption>
+  <figcaption>3-2-1 Backup rule (<a href='https://www.msp360.com/resources/blog/following-3-2-1-backup-strategy/'>source</a>)</figcaption>
 </figure>
 
 And of course in an open science & FAIR approach, upload your raw data as soon as possible to a public data repository
