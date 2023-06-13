@@ -94,10 +94,11 @@ extra:
 nav:
     - Home: index.md
     - Tutorials:
-        - Introduction SouthGreen: pages/introduction/introduction_southgreen.md
+        - Introduction: pages/introduction/introduction_southgreen.md
         - Roundtable Introduce Yourself: pages/introduction/roundtable.md
         - Introduction Reproducible Research: pages/introduction/introduction_rr.md
         - Data Management: pages/data-management/data-management.md
+        - Ice breaker session: pages/ice-breaker.md
         - Git:
           - Introduction: pages/git/git-1-introduction.md
           - Setup: pages/git/git-setup.md
@@ -190,6 +191,7 @@ nav:
           - And now ?: pages/project/project-3-and_now.md 
           - To end on a high note !: pages/project/project-4-demo.md 
         - 'Take down': 'pages/take_down/take_down.md'
+        - 'Final word': 'pages/final_word.md'
     - Cheat sheet:
         - Bash: pages/cheat_sheet/bash/bash.md
         - Git: pages/cheat_sheet/git/git.md
