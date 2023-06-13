@@ -32,9 +32,13 @@ Run a command from a container
 
 `singularity run Singularity.sif echo toto`
 
+Executing a script inside the container
+
+`singularity exec Singularity.sif` 
+
 Use a container interactively
 
-`singularity shell Singularity.sif` 
+`singularity run Singularity.sif` 
 
 you can also define bind points if you need access outside the container. 
 `$HOME`, `/tmp`, `/proc`, `/sys`, `/dev` are mount by default but they can configurated.
@@ -47,9 +51,6 @@ command-line option to specify bind paths, in addition to the SINGULARITY_BINDPA
 ## OR -B /opt,/data:/mnt 
 singularity run Singularity.sif --bind $DIR
 ```
-
-Executing a script inside the container
-`singularity exec Singularity.sif` 
 
 
 ### Converting Docker images to Singularity files
