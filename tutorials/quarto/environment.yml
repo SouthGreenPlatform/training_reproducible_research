@@ -16,6 +16,6 @@ dependencies:
   - bioconductor-rtracklayer=1.58.0
   - bioconductor-geoquery=2.66.0
   - r-tidyselect=1.2.0
-  - r-rmarkdown
-  - r-stringi
-  - r-base
+  - r-rmarkdown=2.14
+  - r-stringi=1.7.12
+  - r-base=4.2.1

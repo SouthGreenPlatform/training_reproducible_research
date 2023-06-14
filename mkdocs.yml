@@ -54,6 +54,9 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
 
+extra_css:
+  - stylesheets/extra.css
+
 # Extensions
 markdown_extensions:
   - admonition
@@ -78,8 +81,9 @@ plugins:
   - minify:
       minify_html: true
   - external-markdown
+  - table-reader
   - macros
-
+  
 # Customization
 extra:
 #  homepage:  # Page displayed when clicking the logo

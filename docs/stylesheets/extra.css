@@ -1,0 +1,12 @@
+.md-typeset__table {
+    min-width: 100%;
+}
+
+.md-typeset table:not([class]) {
+    display: table;
+}
+
+thead th {
+    background: #4051b5;
+    color: white;
+}
