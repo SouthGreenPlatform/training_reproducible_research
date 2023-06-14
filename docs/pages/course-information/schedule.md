@@ -40,19 +40,19 @@
         <td style="padding:5px"> <font size="3"> Lunch </td>
     </tr>
     <tr>
-        <td style="padding:5px"> <font size="3"> 13:00 </td>
+        <td style="padding:5px"> <font size="3"> 13:30 </td>
         <td style="padding:5px"> <font size="3"> ... continued: Git tutorial <br></td>
     </tr>
     <tr>
-        <td style="padding:5px"> <font size="3"> 14:30 </td>
+        <td style="padding:5px"> <font size="3"> 15:00 </td>
         <td style="padding:5px"> <font size="3"> Wrap-up Git tutorial </td>
     </tr>
     <tr>
-        <td style="padding:5px"> <font size="3"> 14:45 </td>
+        <td style="padding:5px"> <font size="3"> 15:15 </td>
         <td style="padding:5px"> <font size="3"> Break </td>
     </tr>
     <tr>
-        <td style="padding:5px"> <font size="3"> 15:00 </td>
+        <td style="padding:5px"> <font size="3"> 15:30 </td>
         <td style="padding:5px"> <font size="3"> Master your dependencies - environments and reproducibility
              <font size="2"><i><br>
              - Introduction to the package and environment manager Conda <br>
@@ -60,7 +60,7 @@
         </td>
     </tr>
     <tr>
-        <td style="padding:5px"> <font size="3"> 16:45 </td>
+        <td style="padding:5px"> <font size="3"> 17:15 </td>
         <td style="padding:5px"> <font size="3"> Wrap up: Conda tutorial </td>
     </tr>
 </table>
