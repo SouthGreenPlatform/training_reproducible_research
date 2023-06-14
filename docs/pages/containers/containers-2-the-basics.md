@@ -129,11 +129,11 @@ to download and prepare the input for bowtie2.
 Now try running the following Bash code, create an `analysis` directory:
 
 ```bash
-docker run -v /path/to/dir/analysis:/home quay.io/biocontainers/bowtie2:2.5.0--py310h8d7afc0_0 bowtie2-build /home/tempfile /home/NCTC832
+docker run -v $(pwd)/analysis:/home quay.io/biocontainers/bowtie2:2.5.0--py310h8d7afc0_0 bowtie2-build /home/tempfile /home/NCTC832
 ```
 
 Docker will automatically download the container image and subsequently run the
-command! Here we're using `-v HOST:PATH_INTO_DOCKER` to mount the required directory
+command! Here we're using `-v HOST:PATH_INTO_ HOST` to mount the required directory
 inside the container in order to make the `tempfile` input available to bowtie2.
 More on these so-called "Bind mounts" in Section [bind mount](https://southgreenplatform.github.io/training_reproducible_research/pages/containers/containers-4-managing-containers/#bind-mounts) of this tutorial.
 
