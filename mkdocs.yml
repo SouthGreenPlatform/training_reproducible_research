@@ -199,4 +199,5 @@ nav:
         - Conda: pages/cheat_sheet/conda/conda.md
         - Notebook: pages/cheat_sheet/notebook/notebook.md
         - Docker: https://dockerlabs.collabnix.com/docker/cheatsheet/
+    - Ask a question: pages/slido.md
 
