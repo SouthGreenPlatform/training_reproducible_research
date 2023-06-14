@@ -101,12 +101,12 @@ course, so make sure you've gone through it all for the course start.
 
 ## Teachers
 
-* Jacques Dainat (course responsible)
-* Thomas Denecker (teacher)
-* Aurore Comte (teacher)
-* Gautier Sarah (teacher)
-* Julie Orjuela (teacher)
-* Nicolas Fernandez (teacher)
+* Jacques Dainat (course responsible) <a itemprop="sameAs" content="https://orcid.org/0000-0002-6629-0173" href="https://orcid.org/0000-0002-6629-0173" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a>
+* Thomas Denecker (teacher) <a itemprop="sameAs" content="https://orcid.org/0000-0003-1421-7641" href="https://orcid.org/0000-0003-1421-7641" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a>
+* Aurore Comte (teacher) <a itemprop="sameAs" content="https://orcid.org/0000-0002-6891-5739" href="https://orcid.org/0000-0002-6891-5739" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a>
+* Gautier Sarah (teacher) <a itemprop="sameAs" content="https://orcid.org/0000-0001-5179-972X" href="https://orcid.org/0000-0001-5179-972X" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a>
+* Julie Orjuela (teacher) <a itemprop="sameAs" content="https://orcid.org/0000-0001-8387-2266" href="https://orcid.org/0000-0001-8387-2266" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a>
+* Nicolas Fernandez (teacher) <a itemprop="sameAs" content="https://orcid.org/0000-0001-8490-3714" href="https://orcid.org/0000-0001-8490-3714" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a>
 
 ## Contact
 
