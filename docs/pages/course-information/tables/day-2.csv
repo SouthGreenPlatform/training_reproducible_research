@@ -1,0 +1,11 @@
+Time	Topic
+09:00	Organize your analysis using workflow managers <br>- Introduction to Snakemake <br>- Practical tutorial: Snakemake
+10:30	Break
+10:45	... continued: Snakemake tutorial
+12:00	Lunch
+13:30	... continued: Snakemake tutorial
+14:45	Wrap-up Snakemake tutorial
+15:00	Organize your analysis using workflow managers<br>- Introduction to Nextflow<br>- Practical tutorial: Nextflow
+15:45	Break
+16:00	Containerization <br>- Introduction to containers<br>- Practical tutorial: Containers
+17:45	Wrap-up
