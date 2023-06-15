@@ -120,6 +120,8 @@ installed, and then prepend the command with `docker run <image>`.
 
 First of all we need to download the genome to index though, so run:
 ```bash
+mkdir -p $PWD/analysis
+cd analysis
 curl -o NCTC8325.fa.gz ftp://ftp.ensemblgenomes.org/pub/bacteria/release-37/fasta/bacteria_18_collection/staphylococcus_aureus_subsp_aureus_nctc_8325/dna//Staphylococcus_aureus_subsp_aureus_nctc_8325.ASM1342v1.dna_rm.toplevel.fa.gz
 gunzip -c NCTC8325.fa.gz > tempfile
 ```
@@ -133,7 +135,7 @@ docker run -v $(pwd)/analysis:/home quay.io/biocontainers/bowtie2:2.5.0--py310h8
 ```
 
 Docker will automatically download the container image and subsequently run the
-command! Here we're using `-v HOST:PATH_INTO_ HOST` to mount the required directory
+command! Here we're using `-v HOST:PATH_INTO_DOCKER` to mount the required directory
 inside the container in order to make the `tempfile` input available to bowtie2.
 More on these so-called "Bind mounts" in Section [bind mount](https://southgreenplatform.github.io/training_reproducible_research/pages/containers/containers-4-managing-containers/#bind-mounts) of this tutorial.
 
