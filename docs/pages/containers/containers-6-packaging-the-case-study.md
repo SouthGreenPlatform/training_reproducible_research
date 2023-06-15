@@ -45,6 +45,9 @@ with `docker run`. We just want to get the results, so mount the directory
 Well done! You now have an image that allows anyone to exactly reproduce your
 analysis workflow (if you first `docker push` to Dockerhub that is).
 
+
+<!---
+it does not work !! :S
 !!! Tip
     If you've done the [Jupyter tutorial](jupyter-1-introduction), you know that
     Jupyter Notebook runs as a web server. This makes it very well suited for
@@ -64,3 +67,4 @@ analysis workflow (if you first `docker push` to Dockerhub that is).
     docker run -it -p 8888:8888 nbisweden/workshop-reproducible-research \
     jupyter notebook  --ip=0.0.0.0 --allow-root
     ```
+--->

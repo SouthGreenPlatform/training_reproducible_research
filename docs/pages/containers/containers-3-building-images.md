@@ -8,11 +8,15 @@ this might remind you of how a Git commit contains the difference to the
 previous commit. The great thing about this is that we can start from one base
 layer, say containing an operating system and some utility programs, and then
 generate many new images based on this, say 10 different project-specific
-images. The total space requirements would then only be $base+\sum_{i=1}^{10}(specific_{i})$
+images. 
+
+<!---
+The total space requirements would then only be $base+\sum_{i=1}^{10}(specific_{i})$
 rather than $\sum_{i=1}^{10}(base+specific_{i})$. For example, Bioconda (see the
 [Conda tutorial](conda-1-introduction)) has one base image and then
 one individual layer for each of the more than 3000 packages available in
 Bioconda.
+--->
 
 Docker provides a convenient way to describe how to go from a base image to the
 image we want by using a "Dockerfile". This is a simple text file containing
@@ -127,7 +131,7 @@ The first command will update the apt-get package lists and the second will
 install the packages `bzip2`, `ca-certificates`, `curl`, `fontconfig`, `git`,
 `language-pack-en`, `tzdata`, `vim`, `unzip` and `wget`. Say that you build this
 image now, and then in a month's time you realize that you would have liked a
-Swedish language pack instead of an English. You change to `language-pack-sv`
+French language pack instead of an English. You change to `language-pack-fr`
 and rebuild the image. Docker detects that there is no layer with the new
 list of packages and reruns the second `RUN` command. *However, there is no
 way for Docker to know that it should also update the apt-get package lists*.
@@ -179,7 +183,7 @@ ENV LC_LANG en_US.UTF-8
 
 Here we use the new instruction `ENV`. The first command adds `conda` to the
 path, so we can write `conda install` instead of `/usr/miniconda3/bin/conda install`.
-The next two commands set an UTF-8 character encoding so that we can use
+The next two commands set a UTF-8 character encoding so that we can use
 weird characters (and a bunch of other things).
 
 ```no-highlight
@@ -210,7 +214,7 @@ for the user. If the purpose of your image is to accompany a publication then
 `CMD` could be to run the workflow that generates the paper figures from raw
 data.
 
-## Building from Dockerfiles
+## <span style="color:darkred"> *TP : Building from Dockerfiles*</span> 
 
 Ok, so now we understand how a Dockerfile works. Constructing the image from
 the Dockerfile is really simple. Try it out now:
@@ -246,7 +250,7 @@ to where the image should be build (`.` means the current directory). This had
 no real impact in this case, but matters if you want to import files. Validate
 with `docker image ls` that you can see your new image.
 
-## Creating your own Dockerfile
+## <span style="color:darkred"> *TP : Creating your own Dockerfile*</span>  
 
 Now it's time to make our own Dockerfile to reproduce the results from the
 [Conda tutorial](conda-3-projects). If you haven't done the tutorial,
@@ -265,10 +269,8 @@ the image. So, this is what we need to do:
 2. Set `FROM` to the image we just built.
 
 3. Install the required packages with Conda. We could do this by adding
-   `environment.yml` from the Conda tutorial, but here we do it directly as
-   `RUN` commands. We need to add the conda-forge and bioconda channels with
-   `conda config --add channels <channel_name>` and install `fastqc=0.11.9` and
-   `sra-tools=2.10.1` with `conda install`. The packages will be installed to
+   `environment.yml` from the Conda tutorial. Chanels needed for conda are already included into the `Dockerfile_slim`, we can directly install `fastqc=0.11.9` and
+   `sra-tools=2.11.0` with `mamba install`. The packages will be installed to
    the default environment named `base` inside the container.
 
 4. Add `run_qc.sh` to the image by using the `COPY` instruction. The syntax is
@@ -283,12 +285,13 @@ can take a look at an example below:
 
 ??? example "Click to show the solution"
     ```no-highlight
+
     FROM my_docker_image:latest
-    RUN conda config --add channels bioconda && \
-        conda config --add channels conda-forge && \
-        mamba install -n base fastqc=0.11.9 sra-tools=2.10.1
+    RUN mamba install -n base fastqc=0.11.9 
+    RUN mamba install -n base sra-tools=2.11.0
     COPY run_qc.sh .
     CMD bash run_qc.sh
+
     ```
 
 Build the image and tag it `my_docker_conda`:
