@@ -43,7 +43,3 @@ From: ubuntu:16.04
 
 %startscript
    /bin/bash
-
-%runscript
-    exec echo "The runscript is the containers default runtime command!"
-    bash run_qc.sh
